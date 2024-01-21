@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Татьяна Бекетова](https://up.htmlacademy.ru/htmlcss-individual/1/user/1868375).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Изосимов] (https://htmlacademy.ru/profile/id605037).
 
 ---
 
