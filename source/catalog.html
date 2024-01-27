@@ -7,13 +7,13 @@
 </head>
 <body>
   <header class="page-header">
-    <nav class="navigation">
-      <a href="./index.html" class="">
-        <img src="#" alt="Логотип Седона" width="" height="">
+    <nav class="navigation logo">
+      <a class="logo-link" href="./index.html">
+        <img class="logo-img" src="#" alt="Логотип Седона" width="" height="">
       </a>
       <ul class="navigation-list">
         <li class="navigation-item">
-          <a class="navigation-link" href="./index.html">Главная</a>
+          <a class="navigation-link" href="../source/index.html">Главная</a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">О седоне</a>
@@ -34,12 +34,12 @@
           </a>
         </li>
       </ul>
-      <a class="navigation-link" href="#">Хочу сюда!</a>
+      <a class="button" href="#">Хочу сюда!</a>
     </nav>
   </header>
   <main class="main-inner">
     <header class="main-inner-head">
-      <h1>Гостиницы Седоны</h1>
+      <h1 class="main-inner-head-title">Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link home-link" href="./index.html"><span class="visually-hidden">Главная</span></a>
@@ -112,18 +112,18 @@
           <option value="expencive">Сначала дорогие</option>
         </select>
         <div class="product-sorting-view">
-          <a class="button" href=""><span class="visually-hidden">Показать карточки</span></a>
-          <a class="button" href=""><span class="visually-hidden">Показать строки</span></a>
-          <a class="button" href=""><span class="visually-hidden">Показать список</span></a>
+          <a class="button" href="#"><span class="visually-hidden">Показать карточки</span></a>
+          <a class="button" href="#"><span class="visually-hidden">Показать строки</span></a>
+          <a class="button" href="#"><span class="visually-hidden">Показать список</span></a>
         </div>
       </div>
       <div class="product-card-wrapper card">
         <ul class="card-list">
           <li class="card-item">
-            <a class="card-img" href="">
-              <img src="" alt="Изображение для гостиницы Amara Resort & Spa" width="" height="">
+            <a class="card-link" href="#">
+              <img class="card-img" src="" alt="Изображение для гостиницы Amara Resort & Spa" width="" height="">
             </a>
-            <a class="card-title" href="">
+            <a class="card-title" href="#">
               <h3>Amara Resort & Spa</h3>
             </a>
             <div class="card-desc-box">
@@ -131,15 +131,15 @@
               <p class="card-desc-price">От 4000 ₽</p>
             </div>
             <div class="card-button-box">
-              <a class="button" href="">Подробнее</a>
+              <a class="button" href="#">Подробнее</a>
               <button class="">В избранное</button>
             </div>
             <div class="rating-box">
               <div class="star-box">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+                <img src="" alt="Рейтинг звезда">
+                <img src="" alt="Рейтинг звезда">
+                <img src="" alt="Рейтинг звезда">
+                <img src="" alt="Рейтинг звезда">
               </div>
               <p>Рейтинг: 8,5</p>
             </div>
@@ -173,8 +173,8 @@
       </div>
     </section>
     <section class="newsletter">
-      <h2>Подпишитесь на рассылку</h2>
-      <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+      <p class="newsletter-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
         <input class="newsletter-form-field" type="email" name="newsletter-email" placeholder="Ваш e-mail" aria-label="Введите в поле вашу электронную почту" required>
         <button class="button newsletter-button" type="submit">Подписаться</button>
@@ -197,10 +197,10 @@
       </ul>
     </section>
     <div class="footer-phone">
-      <a href="tel:++78128121212">+7 (812) 812-12-12</a>
+      <a class="footer-phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
     </div>
     <div class="footer-logo">
-      <a href="https://htmlacademy.ru/" target="_blank"><span class="visually-hidden">Логотип html академии</span></a>
+      <a class="footer-logo-link" href="https://htmlacademy.ru/" target="_blank"><span class="visually-hidden">Логотип html академии</span></a>
     </div>
   </footer>
 </body>
