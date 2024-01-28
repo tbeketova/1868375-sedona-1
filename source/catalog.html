@@ -104,12 +104,24 @@
             </li>
           </ul>
         </fieldset>
-        <!-- Фильтр диапазон -->
-        <fieldset class="catalog-filter-group">
-          <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-        </fieldset>
+        <!-- Фильтр диапазон цен -->
+        <fieldset class="catalog-filter-group filter-price">
+          <legend class="filter-price-title">Стоимость, ₽:</legend>
+          <div class="filter-price-wrapper">
+            <div class="filter-price-line">
+              <input type="number" min="0" max="100000" step="1" placeholder="0">
+              <input type="number" min="0" max="100000" step="1" placeholder="9000">
+            </div>
+            <div class="filter-price-range">
+              <button type="button"></button>
+              <button type="button"></button>
+              <span class="range_min"></span>
+              <span class="range_max"></span>
+            </div>
+          </div>
+          </fieldset>
         <button class="button" type="submit">Применить</button>
-        <button class="button button-reset" type="submit">Сбросить</button>
+        <button class="button button-reset" type="reset">Сбросить</button>
       </form>
     </section>
     <section class="catalog-products product">
@@ -205,7 +217,7 @@
               <button type="button" class="button">В избранное</button>
             </div>
             <div class="rating-box">
-              <p class="star star-3">
+              <p class="star star-2">
                 <span class="visually-hidden">2 звезды</span>
               </p>
               <p>Рейтинг: 5,0</p>
@@ -231,9 +243,13 @@
           <li class="pagination-item">
             <a class="pagination-link" href="#">5</a>
           </li>
+          <li class="pagination-item">
+            <span class="pagination-link">...</span>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">10</a>
+          </li>
         </ol>
-        <span class="pagination-link">...</span>
-        <a class="pagination-link" href="#">10</a>
       </div>
     </section>
     <!-- Подписка на рассылку -->
