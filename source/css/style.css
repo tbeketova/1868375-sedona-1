@@ -29,6 +29,19 @@ body {
   color: #000000;
 }
 
+/*Кнопки*/
+.button {
+  font-family: inherit;
+  font-weight: 700;
+  color: #c91111;
+  text-transform: uppercase;
+}
+
+.button-link {
+  text-decoration: none;
+}
+
+/*Меню*/
 .navigation-link {
   font-size: 20px;
   font-weight: 700;
@@ -49,12 +62,16 @@ body {
 
 /* Преимущества, Инфраструктура */
 .advantages-head,
-.infrastructure-head {
+.infrastructure-head,
+.search,
+.newsletter {
   text-align: center;
 }
 
 .advantages-head-title,
-.infrastructure-head-title {
+.infrastructure-head-title,
+.search-title,
+.newsletter-title {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -62,7 +79,9 @@ body {
 }
 
 .advantages-head-text,
-.infrastructure-head-text {
+.infrastructure-head-text,
+.search-text,
+.newsletter-text {
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
@@ -83,4 +102,15 @@ body {
 
 .advantages-item-img {
   display: block;
+}
+
+/*Поиск гостиницы*/
+.newsletter {
+  min-height: 415px;
+  background-image: url('./../images/subscribe-background.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.newsletter-title {
+  font-size: 30px;
 }
