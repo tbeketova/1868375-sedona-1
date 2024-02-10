@@ -1,3 +1,30 @@
-.page {
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    url('../fonts/ptsans-400.woff2') format("woff2"),
+    url('../fonts/ptsans-400.woff') format("woff"),
+    url('../fonts/ptsans-400.ttf') format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src:
+    url('../fonts/ptsans-700.woff2') format("woff2"),
+    url('../fonts/ptsans-400.woff') format("woff2"),
+    url('../fonts/ptsans-400.ttf') format("ttf");
+  font-display: swap;
+}
+
+body {
   margin: 0;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+
 }
