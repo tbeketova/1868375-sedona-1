@@ -35,10 +35,30 @@ body {
   font-weight: 700;
   color: #c91111;
   text-transform: uppercase;
+  border: none;
+  cursor: pointer;
 }
 
 .button-link {
   text-decoration: none;
+}
+
+/*Кнопки в header */
+.button-navigation {
+  background-color: #756157;
+  color: #FFFFFF;
+}
+
+/*Кнопка в search*/
+.button-search {
+  background-color: #756157;
+  color: #FFFFFF;
+}
+
+/*Кнопка в newsletter*/
+.newsletter-button {
+  background-color: #756157;
+  color: #FFFFFF;
 }
 
 /*Меню*/
@@ -113,4 +133,8 @@ body {
 }
 .newsletter-title {
   font-size: 30px;
+}
+
+.footer-phone-link {
+  color: #000000;
 }
