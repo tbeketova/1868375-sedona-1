@@ -168,7 +168,23 @@ body {
   text-decoration: none;
 }
 
+/*Социальные кнопки*/
+.footer-social-vk {
+  width: 24px;
+  height: 14px;
+}
+
 .footer-logo-svg {
   width: 115px;
   height: 33px;
+}
+
+.footer-social-tme {
+  width: 18px;
+  height: 16px;
+}
+
+.footer-social-youtube {
+  width: 22px;
+  height: 17px;
 }
