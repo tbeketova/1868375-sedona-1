@@ -33,7 +33,7 @@ body {
 .button {
   font-family: inherit;
   font-weight: 700;
-  color: #c91111;
+  color: inherit;
   text-transform: uppercase;
   border: none;
   cursor: pointer;
@@ -153,5 +153,5 @@ body {
 
 /*Footer*/
 .footer-phone-link {
-  color: #000000;
+  color: inherit;
 }
