@@ -41,7 +41,7 @@
 
 body {
   margin: 0;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
@@ -56,6 +56,7 @@ body {
   text-transform: uppercase;
   border: none;
   cursor: pointer;
+  padding: 0;
 }
 
 .link-button {
@@ -68,12 +69,20 @@ body {
 }
 
 .search-button {
-  /*другое имя*/
   background-color: #756157;
   color: #FFFFFF;
 }
 
+.newsletter-form-field {
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
 .newsletter-button {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
   background-color: #82B3D3;
   color: #FFFFFF;
 }
@@ -90,7 +99,6 @@ body {
   font-weight: 700;
   line-height: 24px;
   text-decoration: none;
-  text-transform: uppercase;
   text-align: center;
   color: inherit;
 }
@@ -119,8 +127,7 @@ body {
   min-height: 485px;
   background-image: url(./../images/hero-background.jpg);
   background-repeat: no-repeat;
-  background-size: 100% auto;
-  /*чтобы изображение тянулось за шириной экрана*/
+  background-size: cover;
   background-color: #71a0bf;
   text-align: center;
 }
@@ -191,13 +198,6 @@ body {
   display: block;
 }
 
-.infrastructure-item {
-  background-image: url('./../images/icons/icons-house.svg');
-  background-repeat: no-repeat;
-  background-size: 75px 72px;
-  /* background-position: center; */
-}
-
 /*Поиск гостиницы*/
 
 /*Подписка на рассылку*/
@@ -205,7 +205,7 @@ body {
   min-height: 415px;
   background-image: url('./../images/subscribe-background.jpg');
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   background-color: #71a0bf;
 }
 
