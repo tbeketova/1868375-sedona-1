@@ -21,9 +21,22 @@
 }
 
 *,
-*::before,
-*::after {
-  box-sizing: border-box;
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 
 body {
@@ -45,29 +58,32 @@ body {
   cursor: pointer;
 }
 
-.button-link {
+.link-button {
   text-decoration: none;
 }
 
-/*Кнопки в header */
-.button-navigation {
+.navigation-button {
   background-color: #756157;
   color: #FFFFFF;
 }
 
-/*Кнопка в search*/
-.button-search {
+.search-button { /*другое имя*/
   background-color: #756157;
   color: #FFFFFF;
 }
 
-/*Кнопка в newsletter*/
 .newsletter-button {
   background-color: #82B3D3;
   color: #FFFFFF;
 }
 
 /*Меню*/
+.navigation-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .navigation-link {
   font-size: 20px;
   font-weight: 700;
@@ -76,6 +92,25 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: inherit;
+}
+
+/*Навигация пользователя*/
+.navigation-user-search-btn {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  background-image: url('./../images/icons/icons-search.svg');
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+
+.navigation-user-favorite-btn {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  background-image: url('./../images/icons/icons-heart.svg');
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
 }
 
 /*Промо-блок*/
@@ -94,6 +129,12 @@ body {
 }
 
 /* Преимущества, Инфраструктура */
+.advantages-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .advantages-head,
 .advantages-list,
 .infrastructure-head,
@@ -139,6 +180,12 @@ body {
   display: block;
 }
 
+.infrastructure-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 /*Поиск гостиницы*/
 .newsletter {
   min-height: 415px;
@@ -174,11 +221,6 @@ body {
   height: 14px;
 }
 
-.footer-logo-svg {
-  width: 115px;
-  height: 33px;
-}
-
 .footer-social-tme {
   width: 18px;
   height: 16px;
@@ -187,4 +229,9 @@ body {
 .footer-social-youtube {
   width: 22px;
   height: 17px;
+}
+
+.footer-logo-svg {
+  width: 115px;
+  height: 33px;
 }
