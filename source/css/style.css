@@ -77,6 +77,8 @@ body {
   font-size: 18px;
   line-height: 24px;
   color: #000000;
+  padding: 0;
+  border: 0;
 }
 
 .newsletter-button {
@@ -375,6 +377,10 @@ body {
   text-transform: uppercase;
 }
 
+.rating-number {
+  background-color: #F2F2F2;
+}
+
 .card-button-link {
   text-decoration: none;
   font-size: 16px;
@@ -416,4 +422,26 @@ body {
 .pagination-item-points {
   font-size: 22px;
   line-height: 26px;
+}
+
+/*Подписка на рассылку*/
+.catalog-newsletter {
+  text-align: center;
+}
+
+.catalog-newsletter-title {
+  margin: 0;
+}
+
+.catalog-newsletter-text {
+  margin: 0;
+}
+
+.catalog-newsletter-form-field {
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  padding: 0;
+  border: none;
+  background-color: #F2F2F2;
 }
