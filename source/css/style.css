@@ -15,7 +15,7 @@
   font-weight: 700;
   src:
     url('../fonts/ptsans-700.woff2') format("woff2"),
-    url('../fonts/ptsans-400.woff') format("woff2"),
+    url('../fonts/ptsans-400.woff') format("woff"),
     url('../fonts/ptsans-400.ttf') format("ttf");
   font-display: swap;
 }
@@ -307,12 +307,18 @@ body {
 
 .catalog-filter-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
   line-height: 21px;
   color: #FFFFFF;
 }
 
+.catalog-filter-label{
+  line-height: 23px;
+}
+
 /*Фильтр диапазон цен*/
-.filter-price-line input::placeholder{
+.filter-price-line input::placeholder {
   font-weight: 700;
   line-height: 24px;
   color: #000000;
@@ -378,6 +384,8 @@ body {
 }
 
 .rating-number {
+  font-size: 16px;
+  line-height: 20px;
   background-color: #F2F2F2;
 }
 
@@ -431,16 +439,20 @@ body {
 
 .catalog-newsletter-title {
   margin: 0;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
 }
 
 .catalog-newsletter-text {
   margin: 0;
+  font-size: 22px;
+  line-height: 26px;
 }
 
 .catalog-newsletter-form-field {
-  font-size: 18px;
   line-height: 24px;
-  color: #000000;
   padding: 0;
   border: none;
   background-color: #F2F2F2;
