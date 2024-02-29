@@ -143,14 +143,6 @@ body {
   outline-offset: -2px;
 }
 
-/* .navigation-user-list {
-  display: flex;
-}
-
-.navigation-user-item {
-  margin-right: 50px;
-} */
-
 .navigation-user-search-btn {
   width: 20px;
   height: 20px;
@@ -192,7 +184,8 @@ body {
   padding: 0;
 }
 
-.advantages-list {
+.advantages-list,
+.infrastructure-list {
   display: flex;
   flex-wrap: wrap;
 }
@@ -236,7 +229,8 @@ body {
   display: flex;
 }
 
-.advantages-item-box {
+.advantages-item-box,
+.infrastructure-item {
   width: 400px;
   height: 385px;
   border: 2px solid green;
@@ -266,8 +260,20 @@ body {
   width: 800px;
 }
 
-/*Поиск гостиницы*/
+.advantages-item-img-order {
+  order: -1;
+}
 
+.infrastructure-head {
+  width: 505px;
+  margin: 0 auto;;
+}
+
+/*Поиск гостиницы*/
+.search-wrapper {
+  width: 592px;
+  margin: 0 auto;
+}
 /*Подписка на рассылку*/
 .newsletter {
   min-height: 415px;
@@ -275,6 +281,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #71a0bf;
+}
+.newsletter-wrapper {
+  width: 684px;
+  margin: 0 auto;
 }
 
 .newsletter-title {
@@ -285,6 +295,7 @@ body {
 }
 
 .newsletter-text {
+  
   font-style: 22px;
   line-height: 26px;
   color: #FFFFFF;
