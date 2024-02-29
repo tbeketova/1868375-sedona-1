@@ -125,7 +125,7 @@
 /*Меню*/
 .navigation-list,
 .navigation-user {
-  list-style: none;
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
@@ -192,7 +192,7 @@
 /* Преимущества, Инфраструктура */
 .advantages-list,
 .infrastructure-list {
-  list-style: none;
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
@@ -328,7 +328,7 @@
 
 /*Социальные кнопки*/
 .footer-social-list {
-  list-style: none;
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
@@ -416,7 +416,7 @@
 }
 
 .catalog-filter-list {
-  list-style: none;
+  list-style-type: none;
   margin: 0;
   padding: 0;
   line-height: 21px;
@@ -495,7 +495,7 @@
 
 /*Карточки гостиниц*/
 .card-list {
-  list-style: none;
+  list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
@@ -555,7 +555,7 @@
 
 /*Пагинация*/
 .pagination-list {
-  list-style: none;
+  list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
