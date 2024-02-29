@@ -295,13 +295,17 @@ body {
 }
 
 .newsletter-text {
-  
+
   font-style: 22px;
   line-height: 26px;
   color: #FFFFFF;
 }
 
 /*Footer*/
+.page-footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
 .footer-phone-link {
   font-size: 40px;
   line-height: 40px;
