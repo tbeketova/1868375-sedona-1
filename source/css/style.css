@@ -66,7 +66,6 @@
 .container {
   width: 1060px;
   margin: 0 auto;
-  border: 2px solid rgb(37, 5, 143);
 }
 
 /*Кнопки*/
@@ -355,6 +354,10 @@
 }
 
 /*страница Каталог*/
+.main-inner {
+  flex-grow: 1;
+}
+
 .main-inner-wrapper {
   min-height: 412px;
   background-image: url('./../images/catalog-background.jpg');
@@ -375,6 +378,8 @@
 .breadcrumbs {
   margin: 0;
   padding: 0;
+  list-style: none;
+  display: flex;
 }
 
 .breadcrumbs-link {
@@ -385,11 +390,21 @@
   color: #FFFFFF;
 }
 
+.catalog-filter-form {
+  display: flex;
+}
+
 /*Фильтр чекбоксы*/
 .catalog-filter-group {
   margin: 0;
   padding: 0;
-  list-style: none;
+  /* list-style: none; */
+  border: 2px solid rgb(73, 199, 241);
+}
+
+.filter-checkbox {
+  width: 150px;
+  margin-right: 70px;
 }
 
 .catalog-filter-title,
@@ -406,13 +421,25 @@
   padding: 0;
   line-height: 21px;
   color: #FFFFFF;
+
 }
 
 .catalog-filter-label{
   line-height: 23px;
 }
 
+/*Фильтр радиокнопки*/
+.filter-radio {
+  width: 150px;
+  margin-right: 149px;
+}
+
 /*Фильтр диапазон цен*/
+.filter-price {
+  width: 288px;
+  margin-right: 70px;
+}
+
 .filter-price-line input::placeholder {
   font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 18px;
@@ -440,12 +467,18 @@
 
 /*Каталог*/
 /*Сортировка выпадающий список */
+.product-sorting-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .product-sorting-title {
   margin: 0;
   text-transform: uppercase;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
+  margin-right: 200px;
 }
 
 .product-sorting-select {
@@ -453,6 +486,7 @@
   font-size: inherit;
   font-weight: inherit;
   line-height: inherit;
+  margin-right: 70px;
 }
 
 .product-sorting-btn {
@@ -464,6 +498,14 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card-item {
+  width: 340px;
+  border: 2px solid orangered;
 }
 
 .card-link {
@@ -516,6 +558,8 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  gap: 8px;
 }
 
 .pagination-link {
@@ -539,6 +583,8 @@
 
 /*Подписка на рассылку*/
 .catalog-newsletter {
+  margin: 0 auto;
+  width: 684px;
   text-align: center;
 }
 
