@@ -173,8 +173,9 @@
 
 /*Промо-блок*/
 .main-index {
-  flex-grow: 1;
+  flex-grow: 1; /*занимает все доступное пространство для sticky-footer*/
 }
+
 .hero {
   min-height: 485px;
   background-image: url(./../images/hero-background.jpg);
