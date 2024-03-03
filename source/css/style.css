@@ -315,6 +315,10 @@
   color: #FFFFFF;
 }
 
+.newsletter-form-field {
+  background-color: #F2F2F2;
+}
+
 /*Footer*/
 .page-footer-wrapper {
   display: flex;
@@ -332,6 +336,7 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex;
 }
 
 .footer-social-vk {
@@ -582,32 +587,13 @@
   line-height: 26px;
 }
 
-/*Подписка на рассылку*/
-.catalog-newsletter {
-  margin: 0 auto;
-  width: 684px;
-  text-align: center;
+/*Подписка на рассылку Каталог*/
+.newsletter-catalog {
+  background-image: none;
+  background-color: #FFFFFF;
 }
 
-.catalog-newsletter-title {
-  margin: 0;
-  text-transform: uppercase;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 36px;
-}
-
-.catalog-newsletter-text {
-  margin: 0;
-  font-size: 22px;
-  line-height: 26px;
-}
-
-.catalog-newsletter-form-field {
-  font-family: inherit;
-  font-size: 18px;
-  line-height: 24px;
-  padding: 0;
-  border: none;
-  background-color: #F2F2F2;
+.newsletter-catalog-title,
+.newsletter-catalog-text {
+  color: #000000;
 }
