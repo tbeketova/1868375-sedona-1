@@ -128,21 +128,26 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .navigation-list {
   width: 624px;
+
   outline: 2px solid red;
   outline-offset: -2px;
 }
 
 .navigation-link {
+  display: block;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
   text-decoration: none;
   text-align: center;
   color: inherit;
+  padding: 20px 16px;
 }
 
 /*Навигация пользователя*/
@@ -188,6 +193,7 @@
 .hero-img-text {
   width: 458px;
   height: 352px;
+  padding-top: 51px;
 }
 
 /* Преимущества, Инфраструктура */
@@ -224,6 +230,11 @@
   text-transform: uppercase;
 }
 
+.advantages-head-title {
+  padding-top: 69px;
+  margin-bottom: 25px;
+}
+
 .advantages-head {
   width: 651px;
   margin: 0 auto;
@@ -237,6 +248,10 @@
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
+}
+
+.advantages-head-text {
+  margin-bottom: 69px;
 }
 
 .advantages-item-wrapper {
@@ -269,6 +284,22 @@
   margin: 0;
 }
 
+
+.advantages-item-box {
+  /* padding: 103px 85px; */
+  padding: 103px 85px 0 85px;
+  border: 2px solid red;
+}
+
+.advantages-item-title {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.advantages-item-text {
+  margin-bottom: 15px;
+}
+
 .advantages-item-img {
   display: block;
   width: 800px;
@@ -297,9 +328,11 @@
   background-size: cover;
   background-color: #71a0bf;
 }
+
 .newsletter-wrapper {
   width: 684px;
   margin: 0 auto;
+
 }
 
 .newsletter-title {
@@ -323,7 +356,10 @@
 .page-footer-wrapper {
   display: flex;
   justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
+
 .footer-phone-link {
   font-size: 40px;
   line-height: 40px;
@@ -333,10 +369,18 @@
 
 /*Социальные кнопки*/
 .footer-social-list {
+  width: 141px;
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
+
+}
+
+.footer-social-item {
+  width: 47px;
+  height: 40px;
 }
 
 .footer-social-vk {
