@@ -196,7 +196,7 @@
   padding-top: 51px;
 }
 
-/* Преимущества, Инфраструктура */
+/* Преимущества */
 .advantages-list,
 .infrastructure-list {
   list-style-type: none;
@@ -307,11 +307,13 @@
 /*Инфраструктура*/
 .infrastructure-head {
   width: 505px;
-  margin: 0 auto;;
+  margin: 0 auto;
+  padding-top: 64px;
 }
 
-.infrastructure-head-title {
-  padding-top: 64px;
+.infrastructure-head-title,
+.search-title,
+.newsletter-title {
   margin-bottom: 20px;
 }
 
@@ -334,7 +336,18 @@
 .search-wrapper {
   width: 592px;
   margin: 0 auto;
+  padding-top: 96px;
+}
 
+.search-text {
+  margin-bottom: 54px;
+}
+
+.search-button {
+  display: block;
+  width: 376px;
+  margin: 0 auto;
+  margin-bottom: 96px;
 }
 /*Подписка на рассылку*/
 .newsletter {
@@ -348,7 +361,10 @@
 .newsletter-wrapper {
   width: 684px;
   margin: 0 auto;
-
+  padding-top: 96px;
+  text-align: center;
+  outline: 2px solid yellowgreen;
+  outline-offset: -2px;
 }
 
 .newsletter-title {
@@ -359,9 +375,12 @@
 }
 
 .newsletter-text {
+  width: 475px;
+  margin: 0 auto;
   font-style: 22px;
   line-height: 26px;
   color: #FFFFFF;
+  margin-bottom: 54px;
 }
 
 .newsletter-form-field {
