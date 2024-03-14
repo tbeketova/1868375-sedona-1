@@ -438,6 +438,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #71a0bf;
+  margin-bottom: 50px;
 }
 
 .main-inner-head {
@@ -548,7 +549,8 @@
 /*Сортировка выпадающий список */
 .product-sorting-wrapper {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  margin-bottom: 40px;
 }
 
 .product-sorting-title {
@@ -557,22 +559,36 @@
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
-  margin-right: 200px;
+  margin-right: auto;
 }
 
 .product-sorting-select {
+  width: 292px;
+  height: 49px;
   font-family: inherit;
-  font-size: inherit;
+  font-size: 18px;
   font-weight: inherit;
   line-height: inherit;
   margin-right: 70px;
 }
 
 .product-sorting-btn {
+  min-width: 48px;
+  min-height: 48px;
   background-color: transparent;
+  margin-right: 8px;
+  outline: 2px solid yellowgreen;
+ outline-offset: -2px;
+}
+
+.product-sorting-btn:last-child {
+  margin-right: 0;
 }
 
 /*Карточки гостиниц*/
+.product-card-wrapper {
+  margin-bottom: 40px;
+}
 .card-list {
   list-style-type: none;
   margin: 0;
@@ -592,11 +608,16 @@
   color: #000000;
 }
 
+.card-img {
+  margin-bottom: 16px;
+}
+
 .card-title {
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
   margin: 0;
+  margin-bottom: 16px;
 }
 
 .card-desc-type,
@@ -633,6 +654,10 @@
 }
 
 /*Пагинация*/
+.pagination-wrapper {
+  margin-bottom: 60px;
+}
+
 .pagination-list {
   list-style-type: none;
   margin: 0;
