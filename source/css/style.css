@@ -124,7 +124,7 @@
 
 /*Меню*/
 .navigation-list,
-.navigation-user {
+.navigation-user-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -134,9 +134,7 @@
 
 .navigation-list {
   width: 624px;
-
-  outline: 2px solid red;
-  outline-offset: -2px;
+  flex-wrap: wrap;
 }
 
 .navigation-link {
@@ -151,34 +149,23 @@
 }
 
 /*Навигация пользователя*/
-.navigation-user {
+.navigation-user-list {
   max-width: 268px;
   margin-left: auto;
+  align-items: center;
+}
+
+.navigation-user-item {
+  min-width: 44px;
+  min-height: 64px;
   outline: 2px solid red;
   outline-offset: -2px;
 }
 
-.navigation-user-search-btn {
-  width: 20px;
-  height: 20px;
-  background-color: transparent;
-  background-image: url('./../images/icons/icons-search.svg');
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
-}
-
-.navigation-user-favorite-btn {
-  width: 20px;
-  height: 20px;
-  background-color: transparent;
-  background-image: url('./../images/icons/icons-heart.svg');
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
-}
-
 /*Промо-блок*/
 .main-index {
-  flex-grow: 1; /*занимает все доступное пространство для sticky-footer*/
+  flex-grow: 1;
+  /*занимает все доступное пространство для sticky-footer*/
 }
 
 .hero {
@@ -349,6 +336,7 @@
   margin: 0 auto;
   margin-bottom: 96px;
 }
+
 /*Подписка на рассылку*/
 .newsletter {
   min-height: 415px;
@@ -416,6 +404,7 @@
 .footer-social-item {
   width: 47px;
   height: 40px;
+  margin-bottom: 8px;
 }
 
 .footer-social-vk {
@@ -451,12 +440,17 @@
   background-color: #71a0bf;
 }
 
+.main-inner-head {
+  padding-top: 35px;
+}
+
 .main-inner-head-title {
   margin: 0;
   font-size: 60px;
   font-weight: 700;
   line-height: 78px;
   color: #FFFFFF;
+  margin-bottom: 8px;
 }
 
 /*Навигация по сайту*/
@@ -465,6 +459,7 @@
   padding: 0;
   list-style: none;
   display: flex;
+  margin-bottom: 40px;
 }
 
 .breadcrumbs-link {
@@ -483,8 +478,7 @@
 .catalog-filter-group {
   margin: 0;
   padding: 0;
-  /* list-style: none; */
-  border: 2px solid rgb(73, 199, 241);
+  border: 0;
 }
 
 .filter-checkbox {
@@ -498,6 +492,7 @@
   font-weight: 700;
   line-height: 24px;
   color: #FFFFFF;
+  margin-bottom: 32px;
 }
 
 .catalog-filter-list {
@@ -506,10 +501,9 @@
   padding: 0;
   line-height: 21px;
   color: #FFFFFF;
-
 }
 
-.catalog-filter-label{
+.catalog-filter-label span{
   line-height: 23px;
 }
 
