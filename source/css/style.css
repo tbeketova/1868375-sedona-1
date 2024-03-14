@@ -60,8 +60,8 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  /* background-color: #ffffff; */
-  background-color: #f6caca;
+  background-color: #ffffff;
+
 }
 
 .container {
@@ -185,6 +185,9 @@
 }
 
 /* Преимущества */
+.advantages {
+  padding-top: 69px;
+}
 .advantages-list,
 .infrastructure-list {
   list-style-type: none;
@@ -216,11 +219,10 @@
 
 .advantages-head {
   width: 651px;
-  margin: 0 auto;
+  margin: 0 auto 69px auto;
 }
 
 .advantages-head-title {
-  padding-top: 69px;
   margin-bottom: 25px;
 }
 
@@ -232,10 +234,6 @@
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
-}
-
-.advantages-head-text {
-  margin-bottom: 69px;
 }
 
 .advantages-item-wrapper {
@@ -293,10 +291,12 @@
 }
 
 /*Инфраструктура*/
+.infrastructure {
+  padding-top: 64px;
+}
 .infrastructure-head {
   width: 505px;
-  margin: 0 auto;
-  padding-top: 64px;
+  margin: 0 auto 64px auto;
 }
 
 .infrastructure-head-title,
@@ -305,25 +305,23 @@
   margin-bottom: 20px;
 }
 
-.infrastructure-head-text {
-  margin-bottom: 64px;
-}
-
 .infrastructure-item {
   width: 400px;
   min-height: 385px;
   padding: 80px 85px;
+  border: 2px solid red;
+  padding-top: 102px;
 }
 
 .infrastructure-item-title {
-  padding-top: 102px;
+  /* padding-top: 102px; */
   margin-bottom: 30px;
 }
 
 /*Поиск гостиницы*/
 .search {
   padding-top: 96px;
-  padding: 96px;
+  padding-bottom: 96px;
 }
 
 .search-wrapper {
@@ -339,6 +337,7 @@
   display: block;
   width: 376px;
   margin: 0 auto;
+  padding: 8px 50px;
 }
 
 /*Подписка на рассылку*/
@@ -358,8 +357,8 @@
 .newsletter-wrapper {
   width: 684px;
   margin: 0 auto;
-  padding-top: 96px;
   text-align: center;
+  padding-top: 96px;
 }
 
 .newsletter-title {
@@ -549,12 +548,15 @@
 }
 
 /*Каталог*/
+.catalog-products {
+  padding-top: 50px;
+}
+
 /*Сортировка выпадающий список */
 .product-sorting-wrapper {
   display: flex;
   /* justify-content: space-between; */
-  padding-top: 50px;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .product-sorting-title {
@@ -591,7 +593,7 @@
 
 /*Карточки гостиниц*/
 .product-card-wrapper {
-
+  margin-bottom: 40px;
 }
 
 .card-list {
@@ -660,7 +662,6 @@
 
 /*Пагинация*/
 .pagination-wrapper {
-  padding-top: 40px;
   padding-bottom: 60px;
 }
 
@@ -671,14 +672,17 @@
   display: flex;
 }
 
+.pagination-item {
+  width: 60px;
+  height: 60px;
+}
+
 .pagination-item:not(:last-child) {
   margin-right: 8px;
 }
 
 .pagination-link {
   display: block;
-  width: 60px;
-  height: 60px;
   padding: 11px 18px;
   text-align: center;
   text-decoration: none;
@@ -687,6 +691,7 @@
   line-height: 36px;
   color: #FFFFFF;
   background-color: #82B3D3;
+  cursor: pointer;
 }
 
 .pagination-current {
@@ -695,8 +700,11 @@
 }
 
 .pagination-item-points {
+  display: block;
+  margin: 0;
   font-size: 22px;
   line-height: 26px;
+  padding: 17px 21px;
 }
 
 /*Подписка на рассылку Каталог*/
