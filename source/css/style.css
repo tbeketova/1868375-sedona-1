@@ -61,7 +61,6 @@
   flex-direction: column;
   margin: 0 auto;
   background-color: #ffffff;
-
 }
 
 .container {
@@ -515,7 +514,6 @@
   font-weight: 700;
   line-height: 24px;
   color: #000000;
-
 }
 
 .filter-button {
@@ -542,7 +540,6 @@
 /*Сортировка выпадающий список */
 .product-sorting-wrapper {
   display: flex;
-  /* justify-content: space-between; */
   margin-bottom: 40px;
 }
 
@@ -593,7 +590,9 @@
 }
 
 .card-item {
-  /* width: 340px; */
+  display: grid;
+  grid-template-columns: 140px 140px;
+  gap: 16px 20px;
   padding: 20px;
   border: 2px solid orangered;
 }
@@ -602,7 +601,6 @@
   text-decoration: none;
   color: #000000;
   grid-column: 1/-1;
-  grid-row: 1/2;
 }
 
 .card-img {
@@ -615,7 +613,6 @@
   font-weight: 700;
   line-height: 28px;
   margin: 0;
-  /* margin-bottom: 16px; */
 }
 
 .card-desc-type,
@@ -623,9 +620,32 @@
   margin: 0;
 }
 
+.card-desc-price {
+  justify-self: end
+}
+
+.card-button-link {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  padding: 8px 26px;
+  background-color: #756157;
+  color: #FFFFFF;
+}
+
+.card-button {
+  font-size: 16px;
+  line-height: 20px;
+  padding: 8px 18px;
+  background-color: #82B3D3;
+  color: #FFFFFF;
+}
+
 .rating-box {
   margin: 0;
   text-transform: uppercase;
+  border: 2px solid orange;
 }
 
 .rating-number {
@@ -634,50 +654,9 @@
   line-height: 20px;
   text-transform: uppercase;
   background-color: #F2F2F2;
-}
-
-.card-button-link {
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
-  background-color: #756157;
-  color: #FFFFFF;
-}
-
-.card-button {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
-  background-color: #82B3D3;
-  color: #FFFFFF;
-}
-
-/*Card grid*/
-.grid.card-item {
-  display: grid;
-  grid-template-columns: 140px 140px;
-  gap: 16px 20px;
-}
-
-.grid .card-img {
-  /* grid-column: 1/-1;
-  grid-row: 1/2; */
-}
-
-.grid.card-link {
-  grid-column: 1/-1;
-  /* grid-row: 1/2; */
-  border: 2px solid red;
-}
-.grid .card-desc-type {
-  /* grid-column: 1/2;
-  grid-row: 3/4; */
-  border: 2px solid red;
-}
-.grid .card-desc-price {
-  border: 2px solid orange;
-  justify-self: end
+  padding-top: 9px;
+  padding-bottom: 9px;
+  text-align: center;
 }
 
 /*Пагинация*/
