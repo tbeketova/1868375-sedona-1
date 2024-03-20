@@ -385,6 +385,7 @@
 .page-footer-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-top: 40px;
   padding-bottom: 30px;
 }
@@ -398,7 +399,7 @@
 
 /*Социальные кнопки*/
 .footer-social-list {
-  width: 141px;
+  /* width: 141px; */
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -410,25 +411,29 @@
 .footer-social-item {
   width: 47px;
   height: 40px;
-  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid red;
 }
 
 .footer-social-vk {
-  width: 24px;
-  height: 14px;
+  /* width: 24px;
+  height: 14px; */
 }
 
 .footer-social-tme {
-  width: 18px;
-  height: 16px;
+  /* width: 18px;
+  height: 16px; */
 }
 
 .footer-social-youtube {
-  width: 22px;
-  height: 17px;
+  /* width: 22px;
+  height: 17px; */
 }
 
 .footer-logo-svg {
+  display: block;
   width: 115px;
   height: 33px;
 }
@@ -606,16 +611,20 @@
 }
 
 .card-item {
-  width: 340px;
+  /* width: 340px; */
+  padding: 20px;
   border: 2px solid orangered;
 }
 
-.card-link {
+.card-link{
   text-decoration: none;
   color: #000000;
+  grid-column: 1/-1;
+  grid-row: 1/2;
 }
 
 .card-img {
+  display: block;
   margin-bottom: 16px;
 }
 
@@ -624,7 +633,7 @@
   font-weight: 700;
   line-height: 28px;
   margin: 0;
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
 }
 
 .card-desc-type,
@@ -632,14 +641,16 @@
   margin: 0;
 }
 
-.rating-box p {
+.rating-box {
   margin: 0;
   text-transform: uppercase;
 }
 
 .rating-number {
+  margin: 0;
   font-size: 16px;
   line-height: 20px;
+  text-transform: uppercase;
   background-color: #F2F2F2;
 }
 
@@ -658,6 +669,33 @@
   line-height: 20px;
   background-color: #82B3D3;
   color: #FFFFFF;
+}
+
+/*Card grid*/
+.grid.card-item {
+  display: grid;
+  grid-template-columns: 140px 140px;
+  gap: 16px 20px;
+}
+
+.grid .card-img {
+  /* grid-column: 1/-1;
+  grid-row: 1/2; */
+}
+
+.grid.card-link {
+  grid-column: 1/-1;
+  /* grid-row: 1/2; */
+  border: 2px solid red;
+}
+.grid .card-desc-type {
+  /* grid-column: 1/2;
+  grid-row: 3/4; */
+  border: 2px solid red;
+}
+.grid .card-desc-price {
+  border: 2px solid orange;
+  justify-self: end
 }
 
 /*Пагинация*/
