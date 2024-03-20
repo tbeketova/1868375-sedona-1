@@ -80,37 +80,6 @@
   padding: 0;
 }
 
-.link-button {
-  text-decoration: none;
-}
-
-.navigation-button {
-  background-color: #756157;
-  color: #FFFFFF;
-}
-
-.search-button {
-  background-color: #756157;
-  color: #FFFFFF;
-}
-
-.newsletter-form-field {
-  font-family: inherit;
-  font-size: 18px;
-  line-height: 24px;
-  color: #000000;
-  padding: 0;
-  border: 0;
-}
-
-.newsletter-button {
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 36px;
-  background-color: #82B3D3;
-  color: #FFFFFF;
-}
-
 /*Header*/
 .page-header-wrapper {
   display: flex;
@@ -161,6 +130,12 @@
   min-height: 64px;
   outline: 2px solid red;
   outline-offset: -2px;
+}
+
+.navigation-button {
+  text-decoration: none;
+  background-color: #756157;
+  color: #FFFFFF;
 }
 
 /*Промо-блок*/
@@ -334,10 +309,13 @@
 }
 
 .search-button {
+  text-decoration: none;
   display: block;
   width: 376px;
   margin: 0 auto;
   padding: 8px 50px;
+  background-color: #756157;
+  color: #FFFFFF;
 }
 
 /*Подписка на рассылку*/
@@ -347,11 +325,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #71a0bf;
-}
-
-.newsletter-catalog {
-  outline: 2px solid yellowgreen;
-  outline-offset: -2px;
 }
 
 .newsletter-wrapper {
@@ -378,7 +351,26 @@
 }
 
 .newsletter-form-field {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  padding: 0;
+  border: 0;
   background-color: #F2F2F2;
+}
+
+.newsletter-button {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  background-color: #82B3D3;
+  color: #FFFFFF;
+}
+
+.newsletter-catalog {
+  outline: 2px solid yellowgreen;
+  outline-offset: -2px;
 }
 
 /*Footer*/
@@ -417,19 +409,9 @@
   border: 2px solid red;
 }
 
-.footer-social-vk {
-  /* width: 24px;
-  height: 14px; */
-}
-
-.footer-social-tme {
-  /* width: 18px;
-  height: 16px; */
-}
-
-.footer-social-youtube {
-  /* width: 22px;
-  height: 17px; */
+.footer-social-link {
+  display: flex;
+  padding: 12px 12px;
 }
 
 .footer-logo-svg {
