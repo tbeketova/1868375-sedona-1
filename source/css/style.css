@@ -132,8 +132,6 @@
   padding: 0;
   display: flex;
   margin-right: 18px;
-  /* align-items: center; */
-  /* border: 1px solid red; */
 }
 
 .navigation-user-item {
@@ -141,26 +139,23 @@
   min-height: 64px;
 }
 
-.navigation-user-icon-search {
-  width: 44px;
+.navigation-user-icon {
+  width: 44px;       /*задаем размеры кнопке, так как нет содержимого*/
   height: 64px;
-  background-image: url('./../images/icons/icons-search.svg');
   background-color: #fff;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: 20px 20px;
+}
+
+.navigation-user-icon-search {
+  background-image: url('./../images/icons/icons-search.svg');
   outline: 2px solid rgb(43, 156, 49);
   outline-offset: -2px;
 }
 
 .navigation-user-icon-favorite {
-  width: 44px;
-  height: 64px;
   background-image: url('./../images/icons/icons-heart.svg');
-  background-color: #fff;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: 20px 20px;
   position: relative;
   outline: 2px solid rgb(87, 178, 234);
   outline-offset: -2px;
@@ -410,7 +405,13 @@
   margin-bottom: 54px;
 }
 
+.newsletter-form {
+  display: flex;
+  /* justify-content: center; */
+}
+
 .newsletter-form-field {
+  width: 100%;
   font-family: inherit;
   font-size: 18px;
   line-height: 24px;
@@ -418,15 +419,19 @@
   padding: 0;
   border: 0;
   background-color: #F2F2F2;
+  border-radius: 4px 0 0 4px;
+  padding-left: 20px;
 }
 
 .newsletter-button {
+  width: 232px;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
   background-color: #82B3D3;
   color: #FFFFFF;
   padding: 8px 50px;
+  border-radius:  0 4px 4px 0;
 }
 
 .newsletter-catalog {
