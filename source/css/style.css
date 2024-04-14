@@ -93,8 +93,7 @@
 }
 
 /*Меню*/
-.navigation-list,
-.navigation-user-list {
+.navigation-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -119,17 +118,68 @@
 }
 
 /*Навигация пользователя*/
-.navigation-user-list {
-  max-width: 268px;
-  margin-left: auto;
+.navigation-user {
+  max-width: 269px;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  border: 1px solid rgb(187, 244, 17);
+}
+
+.navigation-user-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-right: 18px;
+  /* align-items: center; */
+  /* border: 1px solid red; */
 }
 
 .navigation-user-item {
   min-width: 44px;
   min-height: 64px;
-  outline: 2px solid red;
+}
+
+.navigation-user-icon-search {
+  width: 44px;
+  height: 64px;
+  background-image: url('./../images/icons/icons-search.svg');
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 20px 20px;
+  outline: 2px solid rgb(43, 156, 49);
   outline-offset: -2px;
+}
+
+.navigation-user-icon-favorite {
+  width: 44px;
+  height: 64px;
+  background-image: url('./../images/icons/icons-heart.svg');
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 20px 20px;
+  position: relative;
+  outline: 2px solid rgb(87, 178, 234);
+  outline-offset: -2px;
+}
+
+.notification-badge {
+  font-size: 10px;
+  line-height: 10px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background-color: #7DB54F;
+  border-radius: 50%;
+  position: absolute;
+  top: 12px;
+  right: 4px;
 }
 
 .navigation-button {
@@ -140,6 +190,7 @@
   background-color: #756157;
   color: #FFFFFF;
   padding: 8px 34px;
+  display: block;
 }
 
 /*Промо-блок*/
@@ -167,6 +218,7 @@
 .advantages {
   padding-top: 69px;
 }
+
 .advantages-list,
 .infrastructure-list {
   list-style-type: none;
@@ -273,6 +325,7 @@
 .infrastructure {
   padding-top: 64px;
 }
+
 .infrastructure-head {
   width: 505px;
   margin: 0 auto 64px;
@@ -501,7 +554,7 @@
   color: #FFFFFF;
 }
 
-.catalog-filter-label span{
+.catalog-filter-label span {
   line-height: 23px;
 }
 
@@ -578,7 +631,7 @@
   background-color: transparent;
   margin-right: 8px;
   outline: 2px solid yellowgreen;
- outline-offset: -2px;
+  outline-offset: -2px;
 }
 
 .product-sorting-btn:last-child {
@@ -608,7 +661,7 @@
   border-radius: 4px;
 }
 
-.card-link{
+.card-link {
   text-decoration: none;
   color: #000000;
   grid-column: 1/-1;
