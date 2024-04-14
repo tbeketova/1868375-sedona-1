@@ -457,27 +457,35 @@
 
 /*Социальные кнопки*/
 .footer-social-list {
-  /* width: 141px; */
+  max-width: 200px;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-
+  /* display: flex;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 10px;
 }
 
 .footer-social-item {
-  width: 47px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border: 2px solid red;
 }
 
 .footer-social-link {
-  display: flex;
-  padding: 13px 12px;
+  display: block;
+  width: 47px;
+  height: 40px;
+  position: relative;
+}
+
+.footer-social-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 .footer-logo-svg {
