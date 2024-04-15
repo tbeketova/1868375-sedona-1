@@ -523,7 +523,12 @@
   padding: 0;
   list-style-type: none;
   display: flex;
+  align-items: center;
   margin-bottom: 40px;
+}
+
+.breadcrumbs-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .breadcrumbs-link {
@@ -532,6 +537,20 @@
   font-weight: 400;
   line-height: 21px;
   color: #FFFFFF;
+  padding-left: 18px;
+  position: relative;
+}
+
+.breadcrumbs-link::before {
+  position: absolute;
+  content: '';
+  width: 8px;
+  height: 20px;
+  background-image: url('./../images/icons/icons-breadcrumbs.svg');
+  background-repeat: no-repeat;
+  background-size: 8px 20px;
+  left: 0;
+  top: 1px;
 }
 
 .catalog-filter-form {
@@ -616,6 +635,7 @@
 /*Сортировка выпадающий список */
 .product-sorting-wrapper {
   display: flex;
+  align-items: center;
   margin-bottom: 40px;
 }
 
@@ -635,7 +655,14 @@
   font-size: 18px;
   font-weight: inherit;
   line-height: inherit;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  padding-left: 20px;
   margin-right: 70px;
+}
+
+.product-sorting-toggle {
+  display: flex;
 }
 
 .product-sorting-btn {
@@ -643,12 +670,20 @@
   min-height: 48px;
   background-color: transparent;
   margin-right: 8px;
-  outline: 2px solid yellowgreen;
-  outline-offset: -2px;
+  border: 2px solid #E5E5E5;
 }
 
 .product-sorting-btn:last-child {
   margin-right: 0;
+}
+
+.product-sorting-btn-current {
+  border: 2px solid #000000;
+}
+
+.product-sorting-icon {
+  display: block;
+  margin: auto;
 }
 
 /*Карточки гостиниц*/
