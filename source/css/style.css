@@ -206,6 +206,7 @@
 
 .navigation-button:focus {
   background-color: #615048;
+  outline: none;
 }
 
 /*Промо-блок*/
@@ -403,6 +404,7 @@
 
 .search-button:focus {
   background-color: #615048;
+  outline: none;
 }
 
 /*Подписка на рассылку*/
@@ -476,6 +478,7 @@
 
 .newsletter-button:focus {
   background-color: #68a2ca;
+  outline: none;
 }
 
 /*Footer*/
@@ -600,6 +603,15 @@
   line-height: 21px;
   color: #FFFFFF;
   padding-left: 18px;
+}
+
+.breadcrumbs-link-home {
+  width: 12px;
+  height: 12px;
+  background-image: url('./../images/icons/icons-home.svg');
+  background-repeat: no-repeat;
+  background-size: 12px 12px;
+  background-position: center center;
 }
 
 .catalog-filter-form {
@@ -737,15 +749,32 @@
 
 .product-sorting-select {
   width: 292px;
-  height: 49px;
   font-family: inherit;
   font-size: 18px;
   font-weight: inherit;
   line-height: inherit;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
-  padding-left: 20px;
+  background-image: url('./../images/icons/arrow-down.svg');
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  padding: 12px 18px;
+  padding-right: 40px;
   margin-right: 70px;
+  appearance: none;
+}
+
+.product-sorting-select:not([disabled]):hover {
+  border-color: #68A2CA;
+}
+
+.product-sorting-select:focus {
+  border-color: #3F5E72;
+  outline: none;
+}
+
+.product-sorting-select:disabled {
+  opacity: 0.3;
 }
 
 .product-sorting-toggle {
@@ -766,11 +795,22 @@
 
 .product-sorting-btn-current {
   border: 2px solid #000000;
+  cursor: default;
 }
 
 .product-sorting-icon {
   display: block;
   margin: auto;
+}
+
+.product-sorting-btn:hover,
+.product-sorting-btn:active {
+  border: 2px solid #000000;
+}
+
+.product-sorting-btn:focus {
+  border: 2px solid #68A2CA;
+  outline: none;
 }
 
 /*Карточки гостиниц*/
