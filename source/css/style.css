@@ -87,9 +87,12 @@
 
 .logo-img {
   display: block;
+  position: relative;
   width: 140px;
   height: 70px;
   margin-right: 28px;
+  margin-bottom: -20px;
+  z-index: 3;
 }
 
 /*Меню*/
@@ -118,15 +121,14 @@
   position: relative;
 }
 
-.navigation-link-current::before {
+.navigation-link-current::after {
   position: absolute;
   content: '';
-  bottom: 0;
+  bottom: -2px;
   left: 16px;
   right: 16px;
   height: 2px;
   background-color: #756257;
-
 }
 
 /*Навигация пользователя*/
@@ -233,6 +235,7 @@
   background-size: cover;
   background-color: #71a0bf;
   text-align: center;
+  z-index: 1;
 }
 
 .hero-img-text {
@@ -301,7 +304,7 @@
 .advantages-item-box {
   width: 400px;
   min-height: 385px;
-  padding: 103px 85px 103px 85px;
+  padding: 102px 85px 102px 85px;
 }
 
 .item-box-dark {
@@ -334,10 +337,23 @@
 }
 
 .advantages-item-title {
-  padding-bottom: 30px;
-  margin-bottom: 30px;
+  padding-bottom: 60px;
+  position: relative;
 }
 
+.advantages-item-title::after {
+  position: absolute;
+  content: '';
+  width: 60px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+  left: 85px;
+  bottom: 30px;
+}
+
+.advantages-item-title-light::after {
+  background-color: rgba(255, 255, 255, 0.3);
+}
 
 .advantages-item-img {
   display: block;
@@ -368,8 +384,8 @@
   width: 400px;
   min-height: 385px;
   padding: 80px 85px;
+  /* padding-top: 102px; */
   border: 2px solid red;
-  padding-top: 102px;
 }
 
 .infrastructure-item-title {
