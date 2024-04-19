@@ -142,7 +142,7 @@
   margin: 0;
   padding: 0;
   display: flex;
-  margin-right: 18px;
+  margin-right: 17px;
 }
 
 .navigation-user-item {
@@ -152,24 +152,35 @@
 
 .navigation-user-icon {
   width: 44px;
-  /*задаем размеры кнопке, так как нет содержимого*/
   height: 64px;
-  background-color: #fff;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: 20px 20px;
-}
-
-.navigation-user-icon-search {
-  background-image: url('./../images/icons/icons-search.svg');
-}
-
-.navigation-user-icon-favorite {
-  background-image: url('./../images/icons/icons-heart.svg');
+  background-color: transparent;
   position: relative;
+  z-index: 1;
+}
+
+.navigation-user-icon svg{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.navigation-user-icon-search:hover path,
+.navigation-user-icon-search:focus path{
+  opacity: 0.5;
+}
+
+.navigation-user-icon-favorite:hover path,
+.navigation-user-icon-favorite:focus path {
+  opacity: 0.5;
 }
 
 .notification-badge {
+  position: absolute;
   font-size: 10px;
   line-height: 10px;
   color: #ffffff;
@@ -180,12 +191,13 @@
   height: 20px;
   background-color: #7DB54F;
   border-radius: 50%;
-  position: absolute;
   top: 12px;
   right: 4px;
+  z-index: 3;
 }
 
 .navigation-button {
+  display: block;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -193,7 +205,6 @@
   background-color: #756157;
   color: #FFFFFF;
   padding: 8px 34px;
-  display: block;
 }
 
 .navigation-button:hover {
@@ -605,14 +616,22 @@
   padding-left: 18px;
 }
 
-.breadcrumbs-link-home {
+.breadcrumbs-link:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-link-home:hover path {
+  opacity: 0.6;
+}
+
+/* .breadcrumbs-link-home {
   width: 12px;
   height: 12px;
   background-image: url('./../images/icons/icons-home.svg');
   background-repeat: no-repeat;
   background-size: 12px 12px;
   background-position: center center;
-}
+} */
 
 .catalog-filter-form {
   display: flex;
