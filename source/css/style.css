@@ -312,13 +312,9 @@
   color: #FFFFFF;
 }
 
-.item-box-light {
-  background-color: rgba(131, 179, 211, 0.12);
-}
-
 .item-box-accent {
   padding: 103px 85px 103px 85px;
-  background-color: rgba(131, 179, 211, 0.20)
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .advantages-item-title,
@@ -329,11 +325,6 @@
   line-height: 28px;
   text-transform: uppercase;
   text-align: center;
-}
-
-.advantages-item-text,
-.infrastructure-item-text {
-  margin: 0;
 }
 
 .advantages-item-title {
@@ -353,6 +344,11 @@
 
 .advantages-item-title-light::after {
   background-color: rgba(255, 255, 255, 0.3);
+}
+
+.advantages-item-text,
+.infrastructure-item-text {
+  margin: 0;
 }
 
 .advantages-item-img {
@@ -383,14 +379,35 @@
 .infrastructure-item {
   width: 400px;
   min-height: 385px;
-  padding: 80px 85px;
-  /* padding-top: 102px; */
-  border: 2px solid red;
+  padding: 81px 85px;
+}
+
+.infrastructure-item-box {
+  width: 230px;
+  padding-top: 102px;
+  background-repeat: no-repeat;
+  background-size: 75px 72px;
+  background-position: center 0;
+}
+
+.infrastructure-item-box-souvenirs {
+  background-image: url('./../images/icons/Icons-souvenir.svg');
+}
+
+.infrastructure-item-box-food {
+  background-image: url('./../images/icons/Icons-food.svg');
+}
+
+.infrastructure-item-box-apartments {
+  background-image: url('./../images/icons/icons-apartment.svg');
 }
 
 .infrastructure-item-title {
-  /* padding-top: 102px; */
   margin-bottom: 30px;
+}
+
+.infrastructure-item-text {
+  text-align: center;
 }
 
 /*Поиск гостиницы*/
