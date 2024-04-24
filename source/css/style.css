@@ -883,7 +883,7 @@
   margin-bottom: 40px;
 }
 
-.product-sorting-result {
+.product-sorting-result-wrapper {
   display: flex;
   flex-wrap: wrap;
   margin-right: auto;
@@ -896,6 +896,13 @@
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
+}
+
+/*Сортировка выпадающий список*/
+.product-sorting-select-wrapper {
+  max-width: 292px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .product-sorting-select {
@@ -911,7 +918,6 @@
   background-position: right 20px center;
   padding: 12px 18px;
   padding-right: 40px;
-  margin-right: 70px;
   appearance: none;
 }
 
@@ -928,9 +934,12 @@
   opacity: 0.3;
 }
 
+/*Сортировка карточек по рассположению*/
 .product-sorting-toggle {
-  max-width: 159px;
+  max-width: 204px;
   display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
 }
 
 .product-sorting-btn {

@@ -149,17 +149,19 @@
       <div class="container">
         <section class="catalog-products product-sorting">
           <div class="product-sorting-wrapper">
-            <div class="product-sorting-result">
+            <div class="product-sorting-result-wrapper">
               <h2 class="product-sorting-title">Найдено гостиниц:
               <span>38</span></h2>
             </div>
             <!-- Сортировка выпадающий список -->
-            <select class="product-sorting-select" aria-label="Сортировка">
-              <option value="popular">Сначала популярные</option>
-              <option value="cheap" selected>Сначала дешевые</option>
-              <option value="expensive">Сначала дорогие</option>
-            </select>
-            <!-- Сортировка карточек -->
+            <div class="product-sorting-select-wrapper">
+              <select class="product-sorting-select" aria-label="Сортировка">
+                <option value="popular">Сначала популярные</option>
+                <option value="cheap" selected>Сначала дешевые</option>
+                <option value="expensive">Сначала дорогие</option>
+              </select>
+            </div>
+            <!-- Сортировка карточек по рассположению -->
             <div class="product-sorting-toggle">
               <button class="button product-sorting-btn product-sorting-btn-current" type="button">
                 <span class="visually-hidden">Показать карточки</span>
