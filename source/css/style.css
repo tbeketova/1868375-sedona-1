@@ -743,18 +743,27 @@
   display: flex;
 }
 
+.catalog-filter-group-wrapper {
+  width: 370px;
+  min-height: 157px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-right: 140px;
+}
+
 /*Фильтр чекбоксы*/
 .catalog-filter-group {
   margin: 0;
   padding: 0;
   border: 0;
-  outline: 2px solid yellowgreen;
-  outline-offset: -2px;
+  /* outline: 2px solid yellowgreen;
+  outline-offset: -2px; */
 }
 
 .catalog-filter-group-checkbox {
   width: 150px;
-  margin-right: 70px;
+  /*margin-right: 50px; */
 }
 
 .catalog-filter-title,
@@ -784,7 +793,8 @@
 
 /*Фильтр радиокнопки*/
 .filter-radio {
-  margin-right: 140px;
+  width: 150px;
+  /* margin-right: 140px; */
 }
 
 .catalog-filter-list {
@@ -824,6 +834,12 @@
 
 .filter-price-line-after {
   border-radius: 0 4px 4px 0;
+}
+
+.catalog-filter-button {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
 }
 
 .filter-button {

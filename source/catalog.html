@@ -74,53 +74,55 @@
             <h2 class="visually-hidden">Фильтры для поиска гостиниц</h2>
             <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
             <!-- Фильтр чекбоксы -->
-              <fieldset class="catalog-filter-group catalog-filter-group-checkbox">
-                <legend class="catalog-filter-title">Инфраструктура:</legend>
-                <ul class="catalog-filter-list">
-                  <li class="catalog-filter-item">
-                    <label class="catalog-filter-label">
-                      <input class="control-input" type="checkbox" name="pool" checked>
-                      <span class="catalog-filter-name">Бассейн</span>
-                    </label>
-                  </li>
-                  <li class="catalog-filter-item">
-                    <label class="catalog-filter-label">
-                      <input class="control-input" type="checkbox" name="parking" checked>
-                      <span>Парковка</span>
-                    </label>
-                  </li>
-                  <li class="catalog-filter-item">
-                    <label class="catalog-filter-label">
-                      <input class="control-input" type="checkbox" name="wi-fi">
-                      <span>Wi-Fi</span>
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
-              <!-- Фильтр радиокнопки -->
-              <fieldset class="catalog-filter-group filter-radio">
-                <legend class="catalog-filter-title">Тип Жилья:</legend>
-                <ul class="catalog-filter-list">
-                  <li class="catalog-filter-item">
-                    <label class="catalog-filter-label">
-                      <input class="control-input" type="radio" name="type-houses" value="hotel" checked>
-                      <span>Гостиница</span>
-                    </label>
-                  </li>
-                  <li class="catalog-filter-item">
-                    <label class="catalog-filter-label">
-                      <input class="control-input" type="radio" name="type-houses" value="motel">
-                      <span>Мотель</span>
-                    </label>
-                  </li>
-                  <li class="catalog-filter-item">
-                    <label class="catalog-filter-label">
-                      <input class="control-input" type="radio" name="type-houses" value="apartments">
-                      <span>Апартаменты</span>
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
+              <div class="catalog-filter-group-wrapper">
+                <fieldset class="catalog-filter-group catalog-filter-group-checkbox">
+                  <legend class="catalog-filter-title">Инфраструктура:</legend>
+                  <ul class="catalog-filter-list">
+                    <li class="catalog-filter-item">
+                      <label class="catalog-filter-label">
+                        <input class="control-input" type="checkbox" name="pool" checked>
+                        <span class="catalog-filter-name">Бассейн</span>
+                      </label>
+                    </li>
+                    <li class="catalog-filter-item">
+                      <label class="catalog-filter-label">
+                        <input class="control-input" type="checkbox" name="parking" checked>
+                        <span>Парковка</span>
+                      </label>
+                    </li>
+                    <li class="catalog-filter-item">
+                      <label class="catalog-filter-label">
+                        <input class="control-input" type="checkbox" name="wi-fi">
+                        <span>Wi-Fi</span>
+                      </label>
+                    </li>
+                  </ul>
+                </fieldset>
+                <!-- Фильтр радиокнопки -->
+                <fieldset class="catalog-filter-group filter-radio">
+                  <legend class="catalog-filter-title">Тип Жилья:</legend>
+                  <ul class="catalog-filter-list">
+                    <li class="catalog-filter-item">
+                      <label class="catalog-filter-label">
+                        <input class="control-input" type="radio" name="type-houses" value="hotel" checked>
+                        <span>Гостиница</span>
+                      </label>
+                    </li>
+                    <li class="catalog-filter-item">
+                      <label class="catalog-filter-label">
+                        <input class="control-input" type="radio" name="type-houses" value="motel">
+                        <span>Мотель</span>
+                      </label>
+                    </li>
+                    <li class="catalog-filter-item">
+                      <label class="catalog-filter-label">
+                        <input class="control-input" type="radio" name="type-houses" value="apartments">
+                        <span>Апартаменты</span>
+                      </label>
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
               <!-- Фильтр диапазон цен -->
               <fieldset class="catalog-filter-group filter-price">
                 <legend class="filter-price-title">Стоимость, ₽:</legend>
