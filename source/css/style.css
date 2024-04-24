@@ -100,15 +100,12 @@
 
 /*Меню*/
 .navigation-list {
+  /* width: 624px; */
+  width: 600px;
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
-  flex-wrap: wrap;
-}
-
-.navigation-list {
-  width: 624px;
   flex-wrap: wrap;
 }
 
@@ -156,10 +153,10 @@
 
 /*Навигация пользователя*/
 .navigation-user {
-  max-width: 269px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  margin-left: auto;
 }
 
 .navigation-user-list {
@@ -167,7 +164,8 @@
   margin: 0;
   padding: 0;
   display: flex;
-  margin-right: 17px;
+  flex-wrap: wrap;
+  margin-right: 20px;
 }
 
 .navigation-user-item {
@@ -226,7 +224,7 @@
   z-index: 3;
 }
 
-.navigation-button {
+.navigation-user-button {
   display: block;
   font-size: 16px;
   font-weight: 700;
@@ -234,14 +232,14 @@
   text-decoration: none;
   background-color: #756157;
   color: #FFFFFF;
-  padding: 8px 25px;
+  padding: 8px 32px;
 }
 
-.navigation-button:hover {
+.navigation-user-button:hover {
   background-color: #615048;
 }
 
-.navigation-button:active {
+.navigation-user-button:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #756157;
 }
