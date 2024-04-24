@@ -325,12 +325,13 @@
 
 .advantages-item-wrapper {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .advantages-item-box {
   width: 400px;
   min-height: 385px;
-  padding: 102px 85px 102px 85px;
+  padding: 102px 85px;
 }
 
 .item-box-dark {
@@ -338,9 +339,13 @@
   color: #FFFFFF;
 }
 
-.item-box-accent {
-  padding: 103px 85px 103px 85px;
+.item-box-light {
   background-color: rgba(131, 179, 211, 0.12);
+}
+
+.item-color-accent {
+  /* padding: 103px 85px 103px 85px; */
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .advantages-item-title,
@@ -404,7 +409,7 @@
 
 .infrastructure-item {
   width: 400px;
-  min-height: 385px;
+  /* min-height: 385px; */
   padding: 81px 85px;
 }
 
@@ -414,6 +419,7 @@
   background-repeat: no-repeat;
   background-size: 75px 72px;
   background-position: center 0;
+  outline: 2px solid red;
 }
 
 .infrastructure-item-box-souvenirs {
