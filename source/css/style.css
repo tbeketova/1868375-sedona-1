@@ -874,6 +874,7 @@
 /*Каталог*/
 .catalog-products {
   padding-top: 50px;
+  padding-bottom: 60px;
 }
 
 /*Сортировка выпадающий список */
@@ -936,7 +937,7 @@
 
 /*Сортировка карточек по рассположению*/
 .product-sorting-toggle {
-  max-width: 204px;
+  max-width: 170px;
   display: flex;
   flex-wrap: wrap;
   margin-left: auto;
@@ -976,7 +977,7 @@
 
 /*Карточки гостиниц*/
 .product-card-wrapper {
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 }
 
 .card-list {
@@ -1006,6 +1007,7 @@
 .card-img {
   display: block;
   margin-bottom: 16px;
+  object-fit: cover;
 }
 
 .card-title {
@@ -1096,10 +1098,6 @@
 }
 
 /*Пагинация*/
-.pagination-wrapper {
-  padding-bottom: 60px;
-}
-
 .pagination-list {
   list-style-type: none;
   margin: 0;
