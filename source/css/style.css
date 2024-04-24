@@ -883,13 +883,19 @@
   margin-bottom: 40px;
 }
 
+.product-sorting-result {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: auto;
+}
+
 .product-sorting-title {
+  min-width: 350px;
   margin: 0;
   text-transform: uppercase;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
-  margin-right: auto;
 }
 
 .product-sorting-select {
@@ -923,6 +929,7 @@
 }
 
 .product-sorting-toggle {
+  max-width: 159px;
   display: flex;
 }
 
