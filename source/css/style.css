@@ -400,7 +400,6 @@
   padding-top: 64px;
 }
 
-
 .infrastructure-title,
 .search-title,
 .newsletter-title {
@@ -419,19 +418,22 @@
   margin-bottom: 64px;
 }
 
-.infrastructure-item {
-  width: 400px;
-  /* min-height: 385px; */
-  padding: 81px 85px;
+.infrastructure-list li:nth-child(2n) {
+  background-color: #FFFFFF;
 }
 
-.infrastructure-item-box {
-  width: 230px;
-  padding-top: 102px;
+.infrastructure-item {
+  width: 400px;
+  min-height: 385px;
+  padding: 0 85px;
   background-repeat: no-repeat;
   background-size: 75px 72px;
-  background-position: center 0;
-  outline: 2px solid red;
+  background-position: center 81px;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.infrastructure-item-box-apartments {
+  background-image: url('./../images/icons/icons-souvenir.svg');
 }
 
 .infrastructure-item-box-souvenirs {
@@ -442,16 +444,14 @@
   background-image: url('./../images/icons/Icons-food.svg');
 }
 
-.infrastructure-item-box-apartments {
-  background-image: url('./../images/icons/icons-apartment.svg');
-}
-
 .infrastructure-item-title {
+  padding-top: 183px;
   margin-bottom: 30px;
 }
 
 .infrastructure-item-text {
   text-align: center;
+  margin-bottom: 81px;
 }
 
 /*Поиск гостиницы*/
