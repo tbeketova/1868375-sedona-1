@@ -756,20 +756,7 @@
   opacity: 0.6;
 }
 
-/* .breadcrumbs-link-current {
-  opacity: 0.6;
-  pointer-events: none;
-} */
-
-/* .breadcrumbs-link-home {
-  width: 12px;
-  height: 12px;
-  background-image: url('./../images/icons/icons-home.svg');
-  background-repeat: no-repeat;
-  background-size: 12px 12px;
-  background-position: center center;
-} */
-
+/*Фильтры*/
 .catalog-filter-form {
   display: flex;
 }
@@ -837,20 +824,71 @@
   margin-right: 70px;
 }
 
-.filter-price-line {
+.filter-price-box {
   display: flex;
+  gap: 2px;
   width: 288px;
   margin-bottom: 36px;
 }
 
-.filter-price-line input {
+/* Скрыть стрелки вверх и вниз на элементе input type=number */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+/*Скрыть стрелки вверх и вниз на input type=number в Internet Explorer*/
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-ms-spin-up,
+input[type="number"]::-ms-spin-down {
+  display: none;
+}
+
+.filter-price-number {
+  width: 143px;
+  position: relative;
+}
+
+.filter-price-min span {
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 20%;
+  right: 20px;
+}
+
+.filter-price-max span {
+  position: absolute;
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.3);
+  top: 20%;
+  right: 20px;
+}
+
+.filter-price-box input {
   width: 100%;
   background-color: #F2F2F2;
   padding: 12px 20px;
   border: 0;
 }
 
-.filter-price-line input::placeholder {
+/* .filter-price-box input::placeholder {
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+} */
+
+
+.filter-price-field-before {
+  border-radius: 4px 0 0 4px;
+  margin-right: 2px;
   font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -858,13 +896,15 @@
   color: #000000;
 }
 
-.filter-price-line-before {
-  border-radius: 4px 0 0 4px;
-  margin-right: 2px;
-}
 
-.filter-price-line-after {
+
+.filter-price-field-after {
   border-radius: 0 4px 4px 0;
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
 }
 
 .catalog-filter-button {
@@ -1142,6 +1182,7 @@
   background-color: #F2F2F2;
   padding: 9px 22px;
   text-align: center;
+  border-radius: 4px;
 }
 
 /*Пагинация*/
