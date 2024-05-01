@@ -238,7 +238,6 @@
   background-color: #756157;
   color: #FFFFFF;
   padding: 8px 32px;
-  margin-bottom: 5px;
 }
 
 .navigation-user-button:hover {
@@ -729,6 +728,11 @@
   margin-right: 10px;
 }
 
+.breadcrumbs-item:last-of-type {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
 .breadcrumbs-link {
   text-decoration: none;
   font-size: 16px;
@@ -738,30 +742,24 @@
   padding-left: 18px;
 }
 
-.breadcrumbs-link-home:hover path {
-  opacity: 0.6;
-}
-
-.breadcrumbs-link-home:active path {
-  opacity: 0.3;
-}
-
 .breadcrumbs-link:hover {
   opacity: 0.6;
 }
 
-.breadcrumbs-link:active {
+.breadcrumbs-link:active,
+.breadcrumbs-link:active path {
   opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .breadcrumbs-link:focus {
   opacity: 0.6;
 }
 
-.breadcrumbs-link-current {
+/* .breadcrumbs-link-current {
   opacity: 0.6;
   pointer-events: none;
-}
+} */
 
 /* .breadcrumbs-link-home {
   width: 12px;
