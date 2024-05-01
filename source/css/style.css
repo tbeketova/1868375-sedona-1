@@ -511,14 +511,19 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #71a0bf;
+  /* padding-top: 96px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.newsletter-wrapper {
+/* .newsletter-wrapper {
   width: 684px;
   margin: 0 auto;
   text-align: center;
-  padding-top: 96px;
-}
+
+} */
 
 .newsletter-title {
   font-size: 30px;
@@ -538,7 +543,7 @@
 
 .newsletter-form {
   display: flex;
-  /* justify-content: center; */
+  min-width: 684px;
 }
 
 .newsletter-form-field {
@@ -629,11 +634,17 @@
 }
 
 /*Footer телефон*/
+.footer-phone {
+  width: 344px;
+}
+
 .footer-phone-link {
   font-size: 40px;
   line-height: 40px;
   color: inherit;
   text-decoration: none;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .footer-phone-link:hover {
@@ -653,6 +664,7 @@
   display: block;
   width: 115px;
   height: 33px;
+  margin-bottom: 10px;
 }
 
 .footer-logo-link:hover path {
