@@ -81,6 +81,11 @@
   border-radius: 4px;
 }
 
+.button:disabled {
+  background-color: #E5E5E5;
+  pointer-events: none;
+}
+
 /*Header*/
 .page-header-wrapper {
   display: flex;
@@ -401,6 +406,7 @@
 .advantages-item-img {
   display: block;
   width: 800px;
+  height: 385px;
 }
 
 .advantages-item-img-order {
@@ -547,17 +553,46 @@
 
 .newsletter-form-field {
   width: 100%;
+  padding: 14px 20px;
+  border: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+/*Состояния input*/
+.field {
   font-family: inherit;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
-  padding: 0;
-  border: 0;
   background-color: #F2F2F2;
-  border-radius: 4px 0 0 4px;
-  padding-left: 20px;
+  cursor: pointer;
 }
 
+.field:hover {
+  background-color: #E6E6E6;
+}
+
+.field:focus {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+}
+
+.field:disabled,
+.field:disabled:hover {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  opacity: 0.3;
+  cursor: default;
+}
+
+.field:invalid {
+  border-color: #ea5454;
+}
+
+.field:focus:invalid {
+  border-color: #ea5454;
+}
+
+/*Состояния кнопки*/
 .newsletter-button {
   width: 232px;
   font-size: 20px;
@@ -1092,6 +1127,8 @@ input[type="number"]::-ms-spin-down {
 }
 
 .card-img {
+  width: 300px;
+  height: 212px;
   display: block;
   margin-bottom: 16px;
   object-fit: cover;
