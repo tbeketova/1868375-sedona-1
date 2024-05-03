@@ -820,7 +820,7 @@
 }
 
 .catalog-filter-title,
-.filter-price-title {
+.range-price-title {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -840,6 +840,36 @@
   margin-bottom: 16px;
 }
 
+/*Стилизация checkbox*/
+.catalog-filter-label {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+.control-mark {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+/*Стилизация состояний*/
+.catalog-filter-label:hover {
+  opacity: 0.6;
+}
+
+.catalog-filter-label:active {
+  opacity: 0.3;
+}
+
+.control-input:focus + .control-mark {
+  outline: 3px solid #83B3D3;
+}
+
+
 .catalog-filter-label span {
   line-height: 23px;
 }
@@ -855,11 +885,11 @@
 }
 
 /*Фильтр диапазон цен*/
-.filter-price {
+.range-price {
   margin-right: 70px;
 }
 
-.filter-price-box {
+.range-price-inputs {
   display: flex;
   gap: 2px;
   width: 288px;
@@ -882,64 +912,96 @@ input[type="number"]::-ms-spin-down {
   display: none;
 }
 
-.filter-price-number {
+/*Поля ввода цены*/
+.range-price-inputs input {
+  width: 100%;
+  background-color: #F2F2F2;
+  padding: 12px 45px 10px 20px;
+  border: none;
+  margin: 0;
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+  border-radius: 4px 0 0 4px;
+}
+
+.range-price-label {
   width: 143px;
   position: relative;
 }
 
-.filter-price-min span {
-  font-size: 18px;
-  line-height: 24px;
-  color: rgba(0, 0, 0, 0.3);
-  position: absolute;
-  top: 20%;
-  right: 20px;
-}
-
-.filter-price-max span {
-  position: absolute;
-  font-size: 18px;
-  line-height: 24px;
-  color: rgba(0, 0, 0, 0.3);
-  top: 20%;
-  right: 20px;
-}
-
-.filter-price-box input {
-  width: 100%;
-  background-color: #F2F2F2;
-  padding: 12px 20px;
-  border: 0;
-}
-
-/* .filter-price-box input::placeholder {
-  font-family: 'PT Sans', 'Arial', sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 24px;
-  color: #000000;
-} */
-
-
-.filter-price-field-before {
-  border-radius: 4px 0 0 4px;
-  margin-right: 2px;
-  font-family: 'PT Sans', 'Arial', sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 24px;
-  color: #000000;
-}
-
-
-
-.filter-price-field-after {
+.range-price-label:last-child input {
   border-radius: 0 4px 4px 0;
+}
+
+.range-price-label span {
+  position: absolute;
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.3);
+  top: 20%;
+  right: 20px;
+}
+
+.range-price-label input::placeholder {
   font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
-  color: #000000;
+  /* color: #000000; */
+  color: red;
+}
+
+
+
+/*Шкала ценового диапазона*/
+.range-price-scale {
+  position: relative;
+  width: 288px;
+  height: 4px;
+  background-color: rgb(255, 255, 255, 0.3);
+}
+
+.range-price-bar {
+  position: absolute;
+  width: 226px;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.range-button-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.range-button-toggle:hover {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.range-button-toggle:focus {
+  border: 3px solid #83B3D3;
+}
+
+.range-button-toggle:active {
+  border: 2px solid #83B3D3;
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.4);
+}
+
+.button-toggle-min {
+  top: -8px;
+  left: 0;
+}
+
+.button-toggle-max {
+  top: -8px;
+  right: 0;
 }
 
 .catalog-filter-button {
@@ -948,6 +1010,7 @@ input[type="number"]::-ms-spin-down {
   margin-left: auto;
 }
 
+/*Кнопка Применить*/
 .filter-button {
   font-size: 16px;
   font-weight: 700;

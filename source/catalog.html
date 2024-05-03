@@ -79,20 +79,23 @@
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                       <label class="catalog-filter-label">
-                        <input class="control-input" type="checkbox" name="pool" value="" checked>
+                        <input class="control-input visually-hidden" type="checkbox" name="pool" checked>
+                        <span class="control-mark"></span>
                         <span class="catalog-filter-name">Бассейн</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="catalog-filter-label">
-                        <input class="control-input" type="checkbox" name="parking" checked>
-                        <span>Парковка</span>
+                        <input class="control-input visually-hidden" type="checkbox" name="parking" checked>
+                        <span class="control-mark"></span>
+                        <span class="catalog-filter-name">Парковка</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="catalog-filter-label">
-                        <input class="control-input" type="checkbox" name="wi-fi">
-                        <span>Wi-Fi</span>
+                        <input class="control-input visually-hidden" type="checkbox" name="wi-fi">
+                        <span class="control-mark"></span>
+                        <span class="catalog-filter-name">Wi-Fi</span>
                       </label>
                     </li>
                   </ul>
@@ -123,24 +126,28 @@
                 </fieldset>
               </div>
               <!-- Фильтр диапазон цен -->
-              <fieldset class="catalog-filter-group filter-price">
-                <legend class="filter-price-title">Стоимость, ₽:</legend>
-                <div class="filter-price-wrapper">
-                  <div class="filter-price-box">
-                    <label class="filter-price-number filter-price-min">
-                      <input class="filter-price-field-before" type="number" min="0" max="100000" step="1" value="0">
+              <fieldset class="catalog-filter-group range-price">
+                <legend class="range-price-title">Стоимость, ₽:</legend>
+                <div class="range-price-wrapper">
+                  <div class="range-price-inputs">
+                    <label class="range-price-label">
+                      <input class="range-price-field field" type="number" min="0" max="100000" step="1" value="0" placeholder="0">
                       <span>от</span>
                     </label>
-                    <label class="filter-price-number filter-price-max">
-                      <input class="filter-price-field-after" type="number" min="0" max="100000" step="1" value="9000">
+                    <label class="range-price-label">
+                      <input class="range-price-field  field" type="number" min="0" max="100000" step="1" value="9000">
                       <span>до</span>
                     </label>
                   </div>
-                  <div class="filter-price-range">
-                    <button type="button"></button>
-                    <button type="button"></button>
-                    <span class="range_min"></span>
-                    <span class="range_max"></span>
+                  <div class="range-price-scale">
+                    <div class="range-price-bar" style="left: 0; width: 226px"> <!-- Стили позиционирования для js для динамичного перемещения ползунка -->
+                      <button type="button" class="range-button-toggle button-toggle-min">
+                        <span class="visually-hidden">Изменить минимальную цену</span>
+                      </button>
+                      <button type="button" class="range-button-toggle button-toggle-max">
+                        <span class="visually-hidden">Изменить максимальную цену</span>
+                      </button>
+                    </div>
                   </div>
               </div>
               </fieldset>
