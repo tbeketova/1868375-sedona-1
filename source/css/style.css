@@ -941,20 +941,17 @@ input[type="number"]::-ms-spin-down {
   font-size: 18px;
   line-height: 24px;
   color: rgba(0, 0, 0, 0.3);
-  top: 20%;
+  top: 25%;
   right: 20px;
 }
 
-.range-price-label input::placeholder {
+.range-price-field::placeholder {
   font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
-  /* color: #000000; */
-  color: red;
+  color: #000000;
 }
-
-
 
 /*Шкала ценового диапазона*/
 .range-price-scale {
@@ -1004,13 +1001,14 @@ input[type="number"]::-ms-spin-down {
   right: 0;
 }
 
+
+/*Кнопка Применить*/
 .catalog-filter-button {
   display: flex;
   flex-direction: column;
   margin-left: auto;
 }
 
-/*Кнопка Применить*/
 .filter-button {
   font-size: 16px;
   font-weight: 700;
@@ -1032,6 +1030,7 @@ input[type="number"]::-ms-spin-down {
   color: rgba(255, 255, 255, 0.3);
 }
 
+/*Кнопка Сбросить*/
 .reset-button {
   font-size: 16px;
   font-weight: 700;
@@ -1056,7 +1055,7 @@ input[type="number"]::-ms-spin-down {
   outline-offset: -2px;
 }
 
-/*Каталог*/
+/*Каталог гостиниц*/
 .catalog-products {
   padding-top: 50px;
   padding-bottom: 60px;
