@@ -1089,31 +1089,36 @@ input[type="number"]::-ms-spin-down {
 
 /*Сортировка выпадающий список */
 .product-sorting-wrapper {
-  display: flex;
+  /* display: flex;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 40px; */
 }
 
-.product-sorting-result-wrapper {
+/* .product-sorting-result-box {
+  max-width: 360px;
   display: flex;
   flex-wrap: wrap;
   margin-right: auto;
-}
+} */
 
 .product-sorting-title {
-  min-width: 350px;
   margin: 0;
   text-transform: uppercase;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
+  max-width: 360px;
+  /* display: flex;
+  flex-wrap: wrap; */
+  margin-right: auto;
 }
 
 /*Сортировка выпадающий список*/
-.product-sorting-select-wrapper {
-  max-width: 292px;
+  .product-sorting-select-wrapper {
+    display: grid;
+  /*max-width: 292px;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap;*/
 }
 
 .product-sorting-select {
@@ -1147,9 +1152,13 @@ input[type="number"]::-ms-spin-down {
 
 /*Сортировка карточек по рассположению*/
 .product-sorting-toggle {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   max-width: 170px;
   display: flex;
   flex-wrap: wrap;
+  gap: 8px;
   margin-left: auto;
 }
 
@@ -1157,13 +1166,10 @@ input[type="number"]::-ms-spin-down {
   min-width: 48px;
   min-height: 48px;
   background-color: transparent;
-  margin-right: 8px;
   border: 2px solid #E5E5E5;
 }
 
-.product-sorting-btn:last-child {
-  margin-right: 0;
-}
+
 
 .product-sorting-btn-current {
   border: 2px solid #000000;
