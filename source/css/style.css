@@ -455,11 +455,11 @@
 }
 
 .infrastructure-item-food {
-  background-image: url('./../images/icons/Icons-food.svg');
+  background-image: url('./../images/icons/icons-food.svg');
 }
 
 .infrastructure-item-souvenirs {
-  background-image: url('./../images/icons/Icons-souvenir.svg');
+  background-image: url('./../images/icons/icons-souvenir.svg');
 }
 
 .infrastructure-item-title {
@@ -809,14 +809,11 @@
 .catalog-filter-group {
   margin: 0;
   padding: 0;
-  border: 0;
-  /* outline: 2px solid yellowgreen;
-  outline-offset: -2px; */
+  border: none;
 }
 
-.catalog-filter-group-checkbox {
+.filter-checkbox {
   width: 150px;
-  /*margin-right: 50px; */
 }
 
 .catalog-filter-title,
@@ -845,6 +842,7 @@
   position: relative;
   display: block;
   padding-left: 36px;
+  cursor: pointer;
 }
 
 .control-mark {
@@ -856,7 +854,19 @@
   border-radius: 4px;
 }
 
-/*Стилизация состояний*/
+.control-input[type="checkbox"]:checked + .control-mark:after {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 10px;
+  top: 22%;
+  left: 50%;
+  transform: translate(-50%);
+  background-image: url("./../images/icons/icons-check.svg");
+  background-repeat: no-repeat;
+}
+
+/*Стилизация состояний label и checkbox*/
 .catalog-filter-label:hover {
   opacity: 0.6;
 }
@@ -865,23 +875,39 @@
   opacity: 0.3;
 }
 
-.control-input:focus + .control-mark {
+.control-input:focus + .control-mark,
+.control-input:focus + .control-point {
   outline: 3px solid #83B3D3;
 }
 
-
-.catalog-filter-label span {
+.catalog-filter-name {
   line-height: 23px;
 }
 
 /*Фильтр радиокнопки*/
-.filter-radio {
-  width: 150px;
-  /* margin-right: 140px; */
-}
-
 .catalog-filter-list {
   width: 150px;
+}
+
+.control-point {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  left: 0;
+}
+
+.control-input[type='radio']:checked + .control-point:after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  top: 24%;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: #3F5E72;
+  border-radius: 50%;
 }
 
 /*Фильтр диапазон цен*/

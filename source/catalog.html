@@ -74,7 +74,7 @@
             <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
             <!-- Фильтр чекбоксы -->
               <div class="catalog-filter-group-wrapper">
-                <fieldset class="catalog-filter-group catalog-filter-group-checkbox">
+                <fieldset class="catalog-filter-group filter-checkbox">
                   <legend class="catalog-filter-title">Инфраструктура:</legend>
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
@@ -106,19 +106,22 @@
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                       <label class="catalog-filter-label">
-                        <input class="control-input" type="radio" name="type-houses" value="hotel" checked>
+                        <input class="control-input visually-hidden" type="radio" name="type-houses" value="hotel" checked>
+                        <span class="control-point"></span>
                         <span>Гостиница</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="catalog-filter-label">
-                        <input class="control-input" type="radio" name="type-houses" value="motel">
+                        <input class="control-input visually-hidden" type="radio" name="type-houses" value="motel">
+                        <span class="control-point"></span>
                         <span>Мотель</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="catalog-filter-label">
-                        <input class="control-input" type="radio" name="type-houses" value="apartments">
+                        <input class="control-input visually-hidden" type="radio" name="type-houses" value="apartments">
+                        <span class="control-point"></span>
                         <span>Апартаменты</span>
                       </label>
                     </li>
@@ -131,11 +134,11 @@
                 <div class="range-price-wrapper">
                   <div class="range-price-inputs">
                     <label class="range-price-label">
-                      <input class="range-price-field field" type="number" name="min-price" value="" placeholder="0">
+                      <input class="range-price-field field" type="number" name="min-price" value="" placeholder="0" required>
                       <span>от</span>
                     </label>
                     <label class="range-price-label">
-                      <input class="range-price-field  field" type="number" name="max-price" value="" placeholder="9000">
+                      <input class="range-price-field  field" type="number" name="max-price" value="" placeholder="9000" required>
                       <span>до</span>
                     </label>
                   </div>
