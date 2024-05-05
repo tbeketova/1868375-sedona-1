@@ -142,6 +142,22 @@
   color: #68A2CA;
 }
 
+.test {
+  color: red;
+  position: relative;
+}
+
+.test::after {
+  position: absolute;
+  content: '';
+  bottom: -2px;
+  left: 16px;
+  right: 16px;
+  height: 2px;
+  background-color: red;
+  z-index: 3;
+}
+
 .navigation-link-current::after {
   position: absolute;
   content: '';
@@ -150,6 +166,7 @@
   right: 16px;
   height: 2px;
   background-color: #756257;
+  z-index: 3;
 }
 
 .navigation-link-current {
@@ -1089,6 +1106,7 @@ input[type="number"]::-ms-spin-down {
 /*Сортировка выпадающий список */
 .product-sorting-wrapper {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin-bottom: 40px;
 }
@@ -1109,6 +1127,7 @@ input[type="number"]::-ms-spin-down {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
+  margin-right: auto;
 }
 
 /*Сортировка выпадающий список*/
