@@ -14,7 +14,6 @@
               <img class="logo-img" src="./images/logo-sedona.svg" alt="Логотип Седона" width="140" height="70" >
             </a>
             <!-- Меню-->
-
             <nav class="navigation">
               <ul class="navigation-list">
                 <li class="navigation-item">
@@ -121,15 +120,13 @@
         </section>
         <!-- Подписка на рассылку -->
         <section class="newsletter">
-
-            <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-            <p class="newsletter-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-            <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-              <span class="visually-hidden">Email</span>
-              <input class="newsletter-form-field field" type="email" name="newsletter-email" placeholder="Ваш e-mail" aria-label="Введите в поле вашу электронную почту" required>
-              <button class="button newsletter-button" type="submit">Подписаться</button>
-            </form>
-          
+          <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+          <p class="newsletter-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+            <span class="visually-hidden">Email</span>
+            <input class="newsletter-form-field field" type="email" name="newsletter-email" placeholder="Ваш e-mail" aria-label="Введите в поле вашу электронную почту" required>
+            <button class="button newsletter-button" type="submit">Подписаться</button>
+          </form>
         </section>
       </main>
       <!-- Footer -->
@@ -190,6 +187,51 @@
           </div>
         </div>
       </footer>
-  </div>
+    </div>
+    <div class="modal-container">
+      <div class="modal modal-search">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="modal-field-group">
+              <label class="modal-field-label" for="check-in">Дата заезда:</label>
+              <input class="modal-field-form field" type="date" id="check-in" name="check-in" value="" placeholder="27 апреля 2020">
+              <span>Мы не можем отправить вас в прошлое.</span>
+            </p>
+            <p class="modal-field-label">
+              <label class="modal-field-label" for="departure">Дата выезда:</label>
+              <input class="modal-field-form field" type="date" id="departure" name="departure" value="" placeholder="1 сентября 2023">
+              <span>На эти даты есть свободные номера. Пока есть.</span>
+            </p>
+            <div class="modal-quantity">
+              <p class="modal-number-box">
+                <label for="">Взрослые:</label>
+                <button type="button">
+                  <span class="visually-hidden">Уменьшить количество</span>
+                </button>
+                <input type="number">
+                <button type="button">
+                  <span class="visually-hidden">Увеличить количество</span>
+                </button>
+              </p>
+              <p>
+                <label for="">Дети:</label>
+                <button type="button">
+                  <span class="visually-hidden">Уменьшить количество</span>
+                </button>
+                <input type="number">
+                <button type="button">
+                  <span class="visually-hidden">Уменьшить количество</span>
+                </button>
+              </p>
+            </div>
+
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
