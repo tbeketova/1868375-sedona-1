@@ -1027,7 +1027,6 @@ input[type="number"]::-ms-spin-down {
   right: 0;
 }
 
-
 /*Кнопка Применить*/
 .catalog-filter-button {
   display: flex;
@@ -1089,17 +1088,20 @@ input[type="number"]::-ms-spin-down {
 
 /*Сортировка выпадающий список */
 .product-sorting-wrapper {
-  /* display: flex;
+  display: flex;
   align-items: center;
-  margin-bottom: 40px; */
+  margin-bottom: 40px;
 }
 
-/* .product-sorting-result-box {
-  max-width: 360px;
+.product-sorting-result {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 420px;
   display: flex;
   flex-wrap: wrap;
   margin-right: auto;
-} */
+}
 
 .product-sorting-title {
   margin: 0;
@@ -1107,20 +1109,9 @@ input[type="number"]::-ms-spin-down {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
-  max-width: 360px;
-  /* display: flex;
-  flex-wrap: wrap; */
-  margin-right: auto;
 }
 
 /*Сортировка выпадающий список*/
-  .product-sorting-select-wrapper {
-    display: grid;
-  /*max-width: 292px;
-  display: flex;
-  flex-wrap: wrap;*/
-}
-
 .product-sorting-select {
   width: 292px;
   font-family: inherit;
