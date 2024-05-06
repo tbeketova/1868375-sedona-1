@@ -79,6 +79,8 @@
   cursor: pointer;
   padding: 0;
   border-radius: 4px;
+  /*???? убрать */
+  display: block;
 }
 
 .button:disabled {
@@ -870,7 +872,7 @@
   border-radius: 4px;
 }
 
-.control-input[type="checkbox"]:checked + .control-mark:after {
+.control-input[type="checkbox"]:checked+.control-mark:after {
   position: absolute;
   content: "";
   width: 12px;
@@ -891,8 +893,8 @@
   opacity: 0.3;
 }
 
-.control-input:focus + .control-mark,
-.control-input:focus + .control-point {
+.control-input:focus+.control-mark,
+.control-input:focus+.control-point {
   outline: 3px solid #83B3D3;
 }
 
@@ -914,7 +916,7 @@
   left: 0;
 }
 
-.control-input[type='radio']:checked + .control-point:after {
+.control-input[type='radio']:checked+.control-point:after {
   position: absolute;
   content: "";
   width: 10px;
@@ -941,9 +943,9 @@
 /* Скрыть стрелки вверх и вниз на элементе input type=number */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    appearance: none;
-    margin: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
 }
 
 /*Скрыть стрелки вверх и вниз на input type=number в Internet Explorer*/
@@ -1421,7 +1423,7 @@ input[type="number"]::-ms-spin-down {
   position: absolute;
   width: 52px;
   height: 52px;
-  right: 0;
+  right: 45px;
   background-color: #F2F2F2;
   border-radius: 50px;
   border: none;
@@ -1432,7 +1434,6 @@ input[type="number"]::-ms-spin-down {
 }
 
 .modal-content {
-
   border: 2px solid red;
 }
 
@@ -1443,4 +1444,39 @@ input[type="number"]::-ms-spin-down {
   line-height: 36px;
   text-transform: uppercase;
   margin-bottom: 64px;
+}
+
+.modal-field-dates {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+.modal-field-dates label {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.modal-field-date {
+  position: relative;
+  width: 440px;
+}
+
+.modal-field-date::placeholder {
+  padding: 12px 20px;
+}
+
+.modal-field-error {
+  position: absolute;
+  bottom: 300px;
+  left: 200px;
+}
+
+.tooltip-button {
+  width: 26px;
+  height: 26px;
+  background-color: #83B3D3;
+  border-radius: 50px;
 }
