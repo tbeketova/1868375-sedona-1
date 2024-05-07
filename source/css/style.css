@@ -291,6 +291,7 @@
   background-color: #71a0bf;
   text-align: center;
   position: relative;
+  padding-top: 51px;
 }
 
 .hero::after {
@@ -306,7 +307,6 @@
 .hero-img-text {
   width: 458px;
   height: 352px;
-  padding-top: 51px;
 }
 
 /* Преимущества */
@@ -360,7 +360,7 @@
 .advantages-description {
   text-align: center;
   padding: 0 274px;
-  margin-bottom: 69px;
+  margin-bottom: 90px;
 }
 
 .advantages-item-wrapper {
@@ -380,6 +380,7 @@
 .advantages-item-single {
   background-color: rgba(131, 179, 211, 0.12);
   color: #000000;
+  padding: 113px 85px;
 }
 
 .advantages-list li:nth-child(2n + 1) {
@@ -492,8 +493,8 @@
 
 /*Поиск гостиницы*/
 .search {
-  padding-top: 96px;
-  padding-bottom: 96px;
+  padding-top: 93px;
+  padding-bottom: 92px;
   text-align: center;
 }
 
@@ -529,7 +530,7 @@
 
 /*Подписка на рассылку*/
 .newsletter {
-  min-height: 415px;
+  min-height: 416px;
   background-image: url('./../images/subscribe-background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -539,13 +540,6 @@
   justify-content: center;
   align-items: center;
 }
-
-/* .newsletter-wrapper {
-  width: 684px;
-  margin: 0 auto;
-  text-align: center;
-
-} */
 
 .newsletter-title {
   font-size: 30px;
@@ -640,8 +634,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 40px;
-  padding-bottom: 30px;
+  align-content: center;
+  padding-top: 45px;
+  padding-bottom: 35px;
 }
 
 /*Социальные кнопки*/
@@ -696,6 +691,7 @@
   text-decoration: none;
   margin-right: 10px;
   margin-bottom: 10px;
+  align-items: center;
 }
 
 .footer-phone-link:hover,
@@ -706,10 +702,6 @@
 .footer-phone-link:active {
   opacity: 0.3;
 }
-
-/* .footer-phone-link:focus {
-  color: #756157;
-} */
 
 /*Footer логотип*/
 .footer-logo-svg {
@@ -778,6 +770,10 @@
   top: 1px;
 }
 
+.breadcrumbs-item:not(:first-child) {
+  padding-left: 18px;
+}
+
 .breadcrumbs-item:not(:last-child) {
   margin-right: 10px;
 }
@@ -793,7 +789,6 @@
   font-weight: 400;
   line-height: 21px;
   color: #FFFFFF;
-  padding-left: 18px;
 }
 
 .breadcrumbs-link:hover {
@@ -938,7 +933,7 @@
   display: flex;
   gap: 2px;
   width: 288px;
-  margin-bottom: 36px;
+  margin-bottom: 46px;
 }
 
 /* Скрыть стрелки вверх и вниз на элементе input type=number */
@@ -948,6 +943,11 @@ input[type="number"]::-webkit-outer-spin-button {
   appearance: none;
   margin: 0;
 }
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 
 /*Скрыть стрелки вверх и вниз на input type=number в Internet Explorer*/
 input[type="number"]::-webkit-inner-spin-button,
@@ -970,6 +970,10 @@ input[type="number"]::-ms-spin-down {
   line-height: 24px;
   color: #000000;
   border-radius: 4px 0 0 4px;
+}
+
+input:not(:placeholder-shown) {
+  outline: 3px solid #000000;
 }
 
 .range-price-label {
@@ -1117,7 +1121,7 @@ input[type="number"]::-ms-spin-down {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 420px;
+  width: 468px;
   display: flex;
   flex-wrap: wrap;
   margin-right: auto;
@@ -1364,7 +1368,7 @@ input[type="number"]::-ms-spin-down {
   background-color: #82B3D3;
   cursor: pointer;
   border-radius: 4px;
-  padding: 11px 18px;
+  padding: 11px 20px;
 }
 
 .pagination-link-current {
@@ -1397,6 +1401,7 @@ input[type="number"]::-ms-spin-down {
 .newsletter-catalog {
   background-image: none;
   background-color: #FFFFFF;
+  min-height: 430px;
 }
 
 .newsletter-catalog-title,
@@ -1422,9 +1427,6 @@ input[type="number"]::-ms-spin-down {
   background-color: #ffffff;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
   position: relative;
-}
-
-.modal-search {
   width: 717px;
   border-radius: 30px;
 }
@@ -1433,7 +1435,7 @@ input[type="number"]::-ms-spin-down {
   position: absolute;
   width: 52px;
   height: 52px;
-  right: 45px;
+  right: 50px;
   background-color: #F2F2F2;
   border-radius: 50px;
   border: none;
@@ -1511,7 +1513,7 @@ input[type="number"]::-ms-spin-down {
   color: #FF5757;
   position: absolute;
   bottom: 340px;
-  left: 230px;
+  left: 227px;
 }
 
 .modal-field-notification {
@@ -1520,7 +1522,7 @@ input[type="number"]::-ms-spin-down {
   color: #333333;
   position: absolute;
   bottom: 245px;
-  left: 230px;
+  left: 227px;
 }
 
 /*Вводим количество взрослых и детей*/
