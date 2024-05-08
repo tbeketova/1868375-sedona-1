@@ -34,6 +34,7 @@
   border: 0;
   padding: 0;
   white-space: nowrap;
+  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -172,7 +173,6 @@ img {
   flex-wrap: wrap;
   align-items: center;
   margin-left: auto;
-
 }
 
 .navigation-user-list {
@@ -348,13 +348,13 @@ img {
 
 .advantages-title {
   text-align: center;
-  padding: 0 290px;
+  padding: 0 280px;
   margin-bottom: 25px;
 }
 
 .advantages-description {
   text-align: center;
-  padding: 0 274px;
+  padding: 0 270px;
   margin-bottom: 90px;
 }
 
@@ -367,7 +367,7 @@ img {
 .advantages-item-single {
   width: 400px;
   min-height: 385px;
-  padding: 102px 85px;
+  padding: 102px 84px;
   background-color: #82B3D3;
   color: #FFFFFF;
 }
@@ -375,7 +375,7 @@ img {
 .advantages-item-single {
   background-color: rgba(131, 179, 211, 0.12);
   color: #000000;
-  padding: 113px 85px;
+  padding: 113px 84px;
 }
 
 .advantages-list li:nth-child(2n + 1) {
@@ -475,7 +475,6 @@ img {
 }
 
 .infrastructure-item-title {
-
   margin-bottom: 30px;
 }
 
@@ -522,7 +521,6 @@ img {
 
 /*Подписка на рассылку*/
 .newsletter {
-  /* min-height: 416px; */
   min-height: 412px;
   background-image: url('./../images/subscribe-background.jpg');
   background-repeat: no-repeat;
@@ -544,7 +542,6 @@ img {
   margin-bottom: 24px;
   text-align: center;
 }
-
 
 .newsletter-text {
   width: 475px;
@@ -718,7 +715,6 @@ img {
 }
 
 /*страница Каталог*/
-
 .main-inner {
   flex-grow: 1;
 }
@@ -946,7 +942,6 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
-
 /*Скрыть стрелки вверх и вниз на input type=number в Internet Explorer*/
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button,
@@ -1147,6 +1142,7 @@ input:not(:placeholder-shown) {
   background-position: right 20px center;
   padding: 12px 18px;
   padding-right: 40px;
+  -webkit-appearance: none;
   appearance: none;
   -moz-appearance: none;
 }
@@ -1183,8 +1179,6 @@ input:not(:placeholder-shown) {
   border: 2px solid #E5E5E5;
 }
 
-
-
 .product-sorting-btn-current {
   border: 2px solid #000000;
   cursor: default;
@@ -1215,7 +1209,7 @@ input:not(:placeholder-shown) {
   gap: 20px;
   padding-bottom: 40px;
   border-bottom: 1px solid #E6E6E6;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 
 .card-item {
@@ -1394,7 +1388,7 @@ input:not(:placeholder-shown) {
   display: block;
   margin: 0;
   font-size: 22px;
-  line-height: 26px;
+  line-height: 22px;
   padding: 17px 21px;
   cursor: pointer;
 }
