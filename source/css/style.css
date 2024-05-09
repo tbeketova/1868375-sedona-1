@@ -69,7 +69,7 @@ img {
   flex-direction: column;
   margin: 0 auto;
   background-color: #ffffff;
-  box-shadow: 0 0 15px 0 rgba(0 0 0 / 0.2);
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .container {
@@ -262,7 +262,7 @@ img {
 }
 
 .navigation-user-button:active {
-  color: rgba(255 255 255 / 30%);
+  color: rgba(255, 255, 255, 0.3);
   background-color: #756157;
 }
 
@@ -562,11 +562,20 @@ img {
   border-radius: 4px 0 0 4px;
 }
 
+.newsletter-form-field::placeholder {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+}
+
 /*Состояния input*/
 .field {
   font-family: inherit;
   font-size: 18px;
   line-height: 24px;
+  font-weight: 700;
   color: #000000;
   background-color: #F2F2F2;
   cursor: pointer;
@@ -579,6 +588,11 @@ img {
 .field:focus {
   background-color: #E6E6E6;
   outline: 3px solid #83B3D3;
+}
+
+.field:not(:placeholder-shown) {
+  outline: 3px solid #000000;
+  border-radius: 4px;
 }
 
 .field:disabled,
@@ -670,6 +684,10 @@ img {
 
 .footer-social-link:focus path {
   fill: #68A2CA;
+}
+
+.footer-social-link:focus {
+  outline: 2px solid #68A2CA;
 }
 
 /*Footer телефон*/
@@ -797,6 +815,7 @@ img {
 
 .breadcrumbs-link:focus {
   opacity: 0.6;
+  outline: none;
 }
 
 /*Фильтры*/
@@ -851,6 +870,11 @@ img {
   display: block;
   padding-left: 36px;
   cursor: pointer;
+}
+
+.catalog-filter-label[disabled] {
+  opacity: 0.3;
+  pointer-events: none;
 }
 
 .control-mark {
@@ -951,23 +975,13 @@ input[type="number"]::-ms-spin-down {
 }
 
 /*Поля ввода цены*/
-.range-price-inputs input {
+.range-price-field {
   width: 100%;
   background-color: #F2F2F2;
   padding: 12px 45px 10px 20px;
   border: none;
   margin: 0;
-  font-family: 'PT Sans', 'Arial', sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 24px;
-  color: #000000;
   border-radius: 4px 0 0 4px;
-}
-
-input:not(:placeholder-shown) {
-  outline: 3px solid #000000;
-  border-radius: 4px;
 }
 
 .range-price-label {
@@ -975,7 +989,7 @@ input:not(:placeholder-shown) {
   position: relative;
 }
 
-.range-price-label:last-child input {
+.range-price-label:last-child .range-price-field {
   border-radius: 0 4px 4px 0;
 }
 
@@ -989,7 +1003,7 @@ input:not(:placeholder-shown) {
 }
 
 .range-price-field::placeholder {
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: inherit;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
@@ -1023,16 +1037,15 @@ input:not(:placeholder-shown) {
 }
 
 .range-button-toggle:hover {
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+  background-color: #E6E6E6;
 }
 
 .range-button-toggle:focus {
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
 }
 
 .range-button-toggle:active {
-  border: 2px solid #83B3D3;
-  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.4);
+  outline: 2px solid #83B3D3;
 }
 
 .button-toggle-min {
@@ -1063,9 +1076,13 @@ input:not(:placeholder-shown) {
   margin-bottom: 32px;
 }
 
-.filter-button:hover,
+.filter-button:hover {
+  background-color: #68a2ca;
+}
+
 .filter-button:focus {
   background-color: #68a2ca;
+  outline: none;
 }
 
 .filter-button:active {
@@ -1147,7 +1164,7 @@ input:not(:placeholder-shown) {
   -moz-appearance: none;
 }
 
-.product-sorting-select:not([disabled]):hover {
+.product-sorting-select:not([disabled]):hover { /*не имеет атрибута disabled и находится в состоянии наведения hover*/
   border-color: #68A2CA;
 }
 
@@ -1189,14 +1206,17 @@ input:not(:placeholder-shown) {
   margin: auto;
 }
 
-.product-sorting-btn:hover,
-.product-sorting-btn:active {
+.product-sorting-btn:hover {
   border: 2px solid #000000;
 }
 
 .product-sorting-btn:focus {
   border: 2px solid #68A2CA;
   outline: none;
+}
+
+.product-sorting-btn:active {
+  border: 2px solid #000000;
 }
 
 /*Карточки гостиниц*/
@@ -1267,14 +1287,18 @@ input:not(:placeholder-shown) {
   color: #FFFFFF;
 }
 
-.card-button-link:hover,
-.card-button-link:focus {
+.card-button-link:hover {
   background-color: #615048;
 }
 
 .card-button-link:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #756157;
+}
+
+.card-button-link:focus {
+  background-color: #615048;
+  outline: none;
 }
 
 .card-button {
@@ -1285,14 +1309,18 @@ input:not(:placeholder-shown) {
   color: #FFFFFF;
 }
 
-.card-button:hover,
-.card-button:focus {
+.card-button:hover {
   background-color: #68a2ca;
 }
 
 .card-button:active {
   background-color: #82B3D3;
   color: rgba(255, 255, 255, 0.3);
+}
+
+.card-button:focus {
+  background-color: #68a2ca;
+  outline: none;
 }
 
 .card-button-select {
@@ -1374,14 +1402,18 @@ input:not(:placeholder-shown) {
   pointer-events: none;
 }
 
-.pagination-link:hover,
-.pagination-link:focus {
+.pagination-link:hover {
   background-color: #68a2ca;
 }
 
 .pagination-link:active {
   background-color: #82B3D3;
   color: rgba(255, 255, 255, 0.3);
+}
+
+.pagination-link:focus {
+  background-color: #68a2ca;
+  outline: none;
 }
 
 .pagination-item-points {
@@ -1423,9 +1455,13 @@ input:not(:placeholder-shown) {
   padding: 64px 70px;
   background-color: #ffffff;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
-  position: relative;
-  width: 717px;
   border-radius: 30px;
+  width: 717px;
+  position: relative;
+}
+
+.modal-search {
+
 }
 
 .modal-close-button {
@@ -1465,15 +1501,17 @@ input:not(:placeholder-shown) {
   margin-bottom: 64px;
 }
 
-.modal-field-dates {
+.modal-field-box {
   margin: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 48px;
+  flex-wrap: wrap;
+  /* margin-bottom: 48px; */
 }
 
-.modal-field-dates label {
+.modal-field-box label {
+  width: 120px;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -1483,10 +1521,6 @@ input:not(:placeholder-shown) {
 .modal-field-date {
   position: relative;
   width: 440px;
-  font-family: 'PT Sans', 'Arial', sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 24px;
   padding: 12px 20px;
   margin: 0;
   border: none;
@@ -1494,6 +1528,7 @@ input:not(:placeholder-shown) {
   background-image: url("./../images/icons/icons-date.svg");
   background-repeat: no-repeat;
   background-position: center right 20px;
+  margin-bottom: 4px;
 }
 
 .modal-field-date::placeholder {
@@ -1501,25 +1536,29 @@ input:not(:placeholder-shown) {
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
-  color: #000000;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+@-moz-document url-prefix() {
+  .modal-field-date::placeholder {
+    color: #000000;
+  }
 }
 
 .modal-field-error {
   font-size: 16px;
   line-height: 21px;
   color: #FF5757;
-  position: absolute;
-  bottom: 340px;
-  left: 227px;
+  padding-left: 157px;
+  margin-bottom: 23px;
 }
 
 .modal-field-notification {
   font-size: 16px;
   line-height: 21px;
   color: #333333;
-  position: absolute;
-  bottom: 245px;
-  left: 227px;
+  padding-left: 157px;
+  margin-bottom: 23px;
 }
 
 /*Вводим количество взрослых и детей*/
@@ -1540,6 +1579,7 @@ input:not(:placeholder-shown) {
 }
 
 .modal-quantity-label-adult {
+  width: 91px;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -1549,6 +1589,7 @@ input:not(:placeholder-shown) {
 .quantity-box-kids {
   width: 85px;
   display: flex;
+  align-items: center;
   margin-right: 46px;
 }
 
@@ -1587,14 +1628,11 @@ input:not(:placeholder-shown) {
 }
 
 .modal-quantity-field {
-  font-family: 'PT Sans', 'Arial', sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 24px;
   margin: 0;
   width: 31px;
   height: 48px;
   padding: 14px 8px;
+  outline: none;
   border: none;
 }
 
@@ -1610,6 +1648,10 @@ input:not(:placeholder-shown) {
   outline: none;
   border: 3px solid #83B3D3;
   border-radius: 4px;
+}
+
+.modal-quantity-field:not(:placeholder-shown) {
+  outline: none;
 }
 
 /*Tooltip*/
