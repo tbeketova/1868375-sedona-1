@@ -955,23 +955,18 @@ img {
 }
 
 /* Скрыть стрелки вверх и вниз на элементе input type=number */
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
+.range-price-field[type="number"]::-webkit-inner-spin-button,
+.range-price-field[type="number"]::-webkit-outer-spin-button,
+.modal-quantity-field[type="number"]::-webkit-inner-spin-button,
+.modal-quantity-field[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   appearance: none;
   margin: 0;
 }
 
-input[type="number"] {
+.range-price-field[type="number"],
+.modal-quantity-field[type="number"]{
   -moz-appearance: textfield;
-}
-
-/*Скрыть стрелки вверх и вниз на input type=number в Internet Explorer*/
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-ms-spin-up,
-input[type="number"]::-ms-spin-down {
-  display: none;
 }
 
 /*Поля ввода цены*/
@@ -1458,10 +1453,6 @@ input[type="number"]::-ms-spin-down {
   border-radius: 30px;
   width: 717px;
   position: relative;
-}
-
-.modal-search {
-
 }
 
 .modal-close-button {
