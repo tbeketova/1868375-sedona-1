@@ -200,32 +200,28 @@
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="modal-field-box">
               <label for="check-in">Дата заезда:</label>
-              <input class="modal-field-date field" type="text" id="check-in" name="check-in" value="" placeholder="Укажите дату" required>
+              <input class="modal-field-date field" type="text" id="check-in" name="check-in" value="27 апреля 2020" placeholder="Укажите дату" required>
               <span class="modal-field-error">Мы не можем отправить вас в прошлое.</span>
             </p>
             <p class="modal-field-box">
               <label for="departure">Дата выезда:</label>
-              <input class="modal-field-date field" type="text" id="departure" name="departure" value="" placeholder="Укажите дату" required>
+              <input class="modal-field-date field" type="text" id="departure" name="departure" value="1 сентября 2023" placeholder="Укажите дату" required>
               <span class="modal-field-notification">На эти даты есть свободные номера. Пока есть.</span>
             </p>
-            <ul class="modal-quantity">
-              <li class="modal-quantity-wrapper">
+            <div class="modal-quantity">
+              <p class="modal-quantity-wrapper">
                 <label class="modal-quantity-label-adult" for="adult-quantity">Взрослые:</label>
-                <div class="quantity-button-box">
-                  <button class="button quantity-button quantity-button-min" type="button">
-                    <svg class="quantity-icon" width="20" height="20" role="img" aria-label="Уменьшить количество" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><clipPath><path fill="#fff" fill-opacity="0" d="M0 0h20v20H0z"/></clipPath></defs><g clip-path="url(#a)"><path d="M3 11V9h14v2H3Z" fill="#756157" fill-opacity="0.3" fill-rule="evenodd"/></g></svg>
-                    <span class="visually-hidden">Уменьшить количество</span>
-                  </button>
-                </div>
+                <button class="button quantity-button quantity-button-min" type="button">
+                  <svg class="quantity-icon" width="20" height="20" role="img" aria-label="Уменьшить количество" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><clipPath><path fill="#fff" fill-opacity="0" d="M0 0h20v20H0z"/></clipPath></defs><g clip-path="url(#a)"><path d="M3 11V9h14v2H3Z" fill="#756157" fill-opacity="0.3" fill-rule="evenodd"/></g></svg>
+                  <span class="visually-hidden">Уменьшить количество</span>
+                </button>
                 <input class="modal-quantity-field field" type="number" id="adult-quantity" name="adult-quantity" value="2" placeholder="2" required>
-                <div class="quantity-button-box">
-                  <button class="button quantity-button quantity-button-max" type="button">
-                    <svg class="quantity-icon" width="20" height="20" role="img" aria-label="Увеличить количество" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="a"><path fill="#fff" fill-opacity="0" d="M0 0h20v20H0z"/></clipPath></defs><g clip-path="url(#a)"><path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" fill="#756157" fill-opacity="0.3"/></g></svg>
-                    <span class="visually-hidden">Увеличить количество</span>
-                  </button>
-                </div>
-              </li>
-              <li class="modal-quantity-wrapper">
+                <button class="button quantity-button quantity-button-max" type="button">
+                  <svg class="quantity-icon" width="20" height="20" role="img" aria-label="Увеличить количество" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="a"><path fill="#fff" fill-opacity="0" d="M0 0h20v20H0z"/></clipPath></defs><g clip-path="url(#a)"><path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" fill="#756157" fill-opacity="0.3"/></g></svg>
+                  <span class="visually-hidden">Увеличить количество</span>
+                </button>
+              </p>
+              <p class="modal-quantity-wrapper">
                 <span class="quantity-box-kids">
                   <label class="modal-quantity-label-kids" for="kids-quantity">Дети:</label>
                   <span class="tooltip ">
@@ -233,21 +229,17 @@
                     <span class="tooltip-text" id="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                   </span>
                 </span>
-                <div class="quantity-button-box">
-                  <button class="button quantity-button quantity-button-min" type="button">
-                    <svg class="quantity-icon" width="20" height="20" role="img" aria-label="Уменьшить количество детей" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><clipPath><path fill="#fff" fill-opacity="0" d="M0 0h20v20H0z"/></clipPath></defs><g clip-path="url(#a)"><path d="M3 11V9h14v2H3Z" fill="#756157" fill-opacity="0.3" fill-rule="evenodd"/></g></svg>
-                    <span class="visually-hidden">Уменьшить количество детей</span>
-                  </button>
-                </div>
+                <button class="button quantity-button quantity-button-min" type="button">
+                  <svg class="quantity-icon" width="20" height="20" role="img" aria-label="Уменьшить количество детей" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><clipPath><path fill="#fff" fill-opacity="0" d="M0 0h20v20H0z"/></clipPath></defs><g clip-path="url(#a)"><path d="M3 11V9h14v2H3Z" fill="#756157" fill-opacity="0.3" fill-rule="evenodd"/></g></svg>
+                  <span class="visually-hidden">Уменьшить количество детей</span>
+                </button>
                 <input class="modal-quantity-field field" type="number" id="kids-quantity" name="kids-quantity" value="2" placeholder="2" required>
-                <div class="quantity-button-box">
-                  <button class="button quantity-button quantity-button-max" type="button">
-                    <svg class="quantity-icon" width="20" height="20" role="img" aria-label="Уменьшить количество детей" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><clipPath><path fill="#fff" fill-opacity="0" d="M0 0h20v20H0z"/></clipPath></defs><g clip-path="url(#a)"><path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" fill="#756157" fill-opacity="0.3"/></g></svg>
-                    <span class="visually-hidden">Уменьшить количество</span>
-                  </button>
-                </div>
-              </li>
-            </ul>
+                <button class="button quantity-button quantity-button-max" type="button">
+                  <svg class="quantity-icon" width="20" height="20" role="img" aria-label="Уменьшить количество детей" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><clipPath><path fill="#fff" fill-opacity="0" d="M0 0h20v20H0z"/></clipPath></defs><g clip-path="url(#a)"><path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" fill="#756157" fill-opacity="0.3"/></g></svg>
+                  <span class="visually-hidden">Уменьшить количество</span>
+                </button>
+              </p>
+            </div>
             <button class="button modal-button" type="submit">Найти</button>
           </form>
         </section>
