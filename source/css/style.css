@@ -368,7 +368,7 @@ img {
   min-height: 385px;
   padding: 102px 84px;
   background-color: #82B3D3;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .advantages-item-single {
@@ -446,14 +446,14 @@ img {
 }
 
 .infrastructure-description {
-  color:#333333;
+  color: #333333;
   text-align: center;
   padding: 0 355px;
   margin-bottom: 64px;
 }
 
 .infrastructure-list li:nth-child(2n) {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .infrastructure-item {
@@ -509,7 +509,7 @@ img {
   margin: 0 auto;
   padding: 8px 50px;
   background-color: #756157;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .search-button:hover {
@@ -543,7 +543,7 @@ img {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 0 auto;
   margin-bottom: 24px;
   text-align: center;
@@ -552,7 +552,7 @@ img {
 .newsletter-text {
   width: 475px;
   margin: 0 auto;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 50px;
 }
 
@@ -581,7 +581,7 @@ img {
   font-family: inherit;
   font-size: 18px;
   line-height: 24px;
-  font-weight: 700;
+  font-weight: 400;
   color: #000000;
   background-color: #F2F2F2;
   cursor: pointer;
@@ -618,7 +618,7 @@ img {
   font-weight: 700;
   line-height: 36px;
   background-color: #82B3D3;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 8px 50px;
   border-radius: 0 4px 4px 0;
 }
@@ -751,7 +751,7 @@ img {
   font-size: 60px;
   font-weight: 700;
   line-height: 78px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 8px;
 }
 
@@ -800,7 +800,7 @@ img {
   font-size: 16px;
   font-weight: 400;
   line-height: 21px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .breadcrumbs-link:hover {
@@ -848,7 +848,7 @@ img {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 32px;
 }
 
@@ -861,7 +861,7 @@ img {
   margin: 0;
   padding: 0;
   line-height: 21px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .catalog-filter-item:not(:last-child) {
@@ -929,7 +929,7 @@ img {
   position: absolute;
   width: 20px;
   height: 20px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 50%;
   left: 0;
 }
@@ -977,6 +977,7 @@ img {
 /*Поля ввода цены*/
 .range-price-field {
   width: 100%;
+  font-weight: 700;
   background-color: #F2F2F2;
   padding: 12px 45px 10px 20px;
   border: none;
@@ -1157,9 +1158,11 @@ img {
   -webkit-appearance: none;
   appearance: none;
   -moz-appearance: none;
+  background-color: transparent;
 }
 
-.product-sorting-select:not([disabled]):hover { /*не имеет атрибута disabled и находится в состоянии наведения hover*/
+.product-sorting-select:not([disabled]):hover {
+  /*не имеет атрибута disabled и находится в состоянии наведения hover*/
   border-color: #68A2CA;
 }
 
@@ -1280,7 +1283,7 @@ img {
   line-height: 20px;
   padding: 8px 26px;
   background-color: #756157;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .card-button-link:hover {
@@ -1302,7 +1305,7 @@ img {
   line-height: 20px;
   padding: 8px 18px;
   background-color: #82B3D3;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .card-button:hover {
@@ -1385,7 +1388,7 @@ img {
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #82B3D3;
   cursor: pointer;
   border-radius: 4px;
@@ -1417,7 +1420,7 @@ img {
   display: block;
   margin: 0;
   font-size: 22px;
-  line-height: 22px;
+  line-height: 26px;
   padding: 17px 21px;
   cursor: pointer;
 }
@@ -1427,7 +1430,7 @@ img {
   background-image: none;
   background-color: #ffffff;
   min-height: 430px;
-  padding: 107px 256px 107px 256px;
+  padding: 107px 256px;
 }
 
 .newsletter-catalog-title {
@@ -1435,7 +1438,7 @@ img {
 }
 
 .newsletter-catalog-text {
-  color:#333333;
+  color: #333333;
 }
 
 /*Модальное окно*/
@@ -1514,6 +1517,7 @@ img {
 }
 
 .modal-field-date {
+  font-weight: 700;
   position: relative;
   width: 440px;
   padding: 12px 20px;
@@ -1600,6 +1604,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #F2F2F2;
 }
 
 .quantity-button:hover path {
@@ -1607,7 +1612,7 @@ img {
   fill-opacity: 1;
 }
 
-.quantity-button:focus svg{
+.quantity-button:focus svg {
   outline: 3px solid #83B3D3;
   border-radius: 4px;
 }
@@ -1633,9 +1638,12 @@ img {
   margin: 0;
   width: 31px;
   height: 48px;
+  line-height: 20px;
+  font-weight: 700;
   padding: 14px 8px;
   outline: none;
   border: none;
+  text-align: center;
 }
 
 .modal-quantity-field::placeholder {
